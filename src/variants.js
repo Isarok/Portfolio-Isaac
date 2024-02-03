@@ -1,4 +1,4 @@
-export const fadein = (direction, delay) => {
+const fadeIn = (direction, delay) => {
     return {
         hidden: {
             y: direction === 'up' ? 80 : direction === 'down' ? -80 : 0,
@@ -14,7 +14,9 @@ export const fadein = (direction, delay) => {
                 duration: 1.2,
                 delay: delay,
                 ease: [0.25, 0.25, 0.25, 0.75],
-            },
+            }
         }
     }
 }
+
+export { fadeIn }
