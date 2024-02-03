@@ -1,15 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import About from './components/About'
+import Contact from './components/Contact'
+import Header from './components/Header'
+import Main from './components/Main'
+import Navbar from './components/Navbar'
+import Project from './components/Project'
+import Services from './components/Services'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className='"w-full h-screen text-4xl text-blue-700 flex items-center justify-center'>
-      Hello Coders! I'm Isaac. 
-      This is my Portoflio.  
+    <div className= " bg-site bg-no-repeat bg-cover overflow-hidden  text-white bg-bgcolor" >
+      <Navbar />
+      <Header />
+      <Main />
+      <About />
+      <Services />
+      <Project />
+      <Contact />  
     </div>
   )
 }
