@@ -7,10 +7,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='"w-full h-screen text-4xl text-blue-700 flex items-center justify-center'>
       Hello Coders! I'm Isaac. 
       This is my Portoflio.  
-    </>
+    </div>
   )
 }
 
