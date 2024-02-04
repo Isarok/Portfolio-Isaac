@@ -96,7 +96,7 @@ const Main = () => {
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             whileInView={"show"}
-            className="flex-1 max-w-[320px] lg:max-w-[480px]"
+            className="lg:flex hidden flex-1 max-w-[320px] lg:max-w-[480px]"
           >
             <img src={img} alt="" />
           </motion.div>

@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "ToDoList",
+            "description": "A minimalist and functional todolist, designed to simplify your life and keep you organised.",
+            "category": "Individual project",
+            "link": "https://isarok.github.io/To-Do-List.github.io/src/todolist.html?",
+            "image": "https://i.imgur.com/6xXjDdP.png"
+        },
+        {
+            "id": 2,
+            "title": "Rulette",
+            "description": "A website that fuses the thrill of a roulette wheel with the aesthetics of the Matrix, offering a unique and futuristic experience.",
+            "category": "Team project",
+            "link": "https://joacoleporta.github.io/G1_RULETA_DE_LA_SUERTE/",
+            "image": "https://i.imgur.com/6xXjDdP.png"
+        },
+        {
+            "id": 3,
+            "title": "ecommerce",
+            "description": "An eCommerce that combines elegance and functionality for a hassle-free online shopping experience.",
+            "category": "Team project",
+            "link": "https://e-collectic.vercel.app/products",
+            "image": "https://i.imgur.com/6xXjDdP.png"  
+        }
+    ]
+}
