@@ -25,7 +25,7 @@ const Navbar = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            to="home"
+            to="about"
             className="flex items-center justify-center w-[60px] h-[60px]"
           >
             <MdOutlineMail className="cursor-pointer text-xl" />
@@ -34,7 +34,7 @@ const Navbar = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            to="home"
+            to="services"
             className="flex items-center justify-center w-[60px] h-[60px]"
           >
             <FaUserAlt className="cursor-pointer text-xl" />
@@ -43,7 +43,7 @@ const Navbar = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            to="home"
+            to="projects"
             className="flex items-center justify-center w-[60px] h-[60px]"
           >
             <BiCommentDetail className="cursor-pointer text-xl" />
@@ -52,7 +52,7 @@ const Navbar = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            to="home"
+            to="contact"
             className="flex items-center justify-center w-[60px] h-[60px]"
           >
             <MdOutlineWorkOutline className="cursor-pointer text-xl" />
