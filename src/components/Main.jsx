@@ -1,5 +1,3 @@
-import React from "react";
-
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
 import { TypeAnimation } from "react-type-animation";
@@ -30,14 +28,10 @@ const Main = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 mt-2 font-primary text-[36px] lg:text-[60px] uppercase leading-[1] font-semibold"
             >
-              <span className="mr-4">I'm a</span>
+              <span className="mr-4">Soy <></> un </span>
               <TypeAnimation
                 sequence={[
-                  "Full Stack Developer",
-                  2024,
-                  "Mobile Developer",
-                  2024,
-                  "Designer",
+                  "Desarrollador Web Jr. Full Stack",
                   2024,
                 ]}
                 speed={50}
@@ -53,13 +47,14 @@ const Main = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-5"
             >
-              Hi! I'm a full stack web developer, mobile developer and designer
-              with a solid background. My versatile approach allows me to create
-              engaging and functional web and mobile applications. I use
-              technologies such as React and Node.js for development, and my
-              design skills ensure elegant interfaces and exceptional visual
-              experiences. Ready to contribute my expertise to exciting
-              projects, let's talk about how I can boost your digital vision!
+              ¡Hola! Soy un desarrollador web full stack Jr con una sólida formación adquirida en un bootcamp de 6 meses con F5. 
+              Gracias a la recreación de un entorno profesional, creando proyectos y aplicando las tecnologías más versátiles y demandadas en el sector de TI en España, 
+              he reforzado un amplio bagaje en el trabajo en equipo, adquiriendo un gran abanico de habilidades a lo largo de los años ya que siempre trabaje en equipo. 
+              Mi capacidad de adaptabilidad y respuesta rápida a nuevos retos y problemas, sin descuidar el cuidado del equipo humano e incluso potenciándolo, son aspectos que me describen.
+              Mi enfoque versátil me permite crear aplicaciones web atractivas y funcionales. Utilizo tecnologías como React y Node.js para el desarrollo frontend, y Express, MySQL y Sequelize para el backend. 
+              Con mis habilidades de programación y modestas habilidades en diseño, garantizo interfaces elegantes y óptimas experiencias visuales.
+              Estoy preparado para aportar mi experiencia a proyectos, seguir aprendiendo y ofrecer lo mejor de mí. 
+              ¡Déjame demostrarte cómo puedo contribuir al éxito de tus iniciativas digitales!
             </motion.p>
 
             <motion.div
@@ -69,7 +64,7 @@ const Main = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max mx-auto lg:mx-0 items-center gap-x-8 mb-12"
             >
-              <button className="btn btn-lg">Contact</button>
+              <button className="btn btn-lg">Contacto</button>
               <a href="#contact">My Portoflio</a>
             </motion.div>
 

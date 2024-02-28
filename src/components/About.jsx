@@ -1,11 +1,9 @@
-import React from "react";
-import { CountUp } from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const About = () => {
-  const [ref, inView] = useInView({
+  const [ref] = useInView({
     threshold: 0.5,
   });
   return (
@@ -24,15 +22,13 @@ const About = () => {
             whileInView={"show"}
             className="flex-1"
           >
-            <h2 className="h2 text-violet-800">About Me</h2>
+            <h2 className="h2 text-violet-800">Sobre mí</h2>
             <h3 className="mb-4">
-              I am a passionate developer with 6 months of bootcamp experience.
+              Soy un desarrollador web full stack Jr con una gran actitud y motivación para afrontar retos en el desarrollo de aplicaciones web.
             </h3>
 
             <p className="mb-6">
-              Specialised in full stack web development, mobile and design.
-              Passionate about learning and facing new challenges. Ready to
-              contribute and take projects to the next level!
+             Quiero seguir aprendiendo y enfrentar nuevos desafíos.¡Listo para contribuir y llevar proyectos al siguiente nivel!
             </p>
           </motion.div>
         </div>

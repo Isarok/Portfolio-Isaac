@@ -10,7 +10,7 @@ import Services from './components/Services'
 
 function App() {
   return (
-    <div className= " bg-site bg-no-repeat bg-cover overflow-hidden  text-white bg-bgcolor" >
+    <div className= " bg-site bg-no-repeat bg-cover overflow-hidden bg-bgcolor" >
       <Navbar />
       <Header />
       <Main />

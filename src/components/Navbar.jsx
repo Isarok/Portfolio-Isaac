@@ -1,4 +1,3 @@
-import React from "react";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
 import { FaUserAlt } from "react-icons/fa";

@@ -1,27 +1,11 @@
-import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const services = [
   {
-    nome: "UI/UX Design",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo tempora saepe.",
-    link: "Learn More",
-  },
-  {
     nome: "Full Stack Web Development",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo tempora saepe.",
-    link: "Learn More",
-  },
-  {
-    nome: "Movil App Development",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo tempora saepe.",
-    link: "Learn More",
-  },
-  {
-    nome: "SEO",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo tempora saepe.",
+    desc: "He desarrollado una gran base de conocimientos y habilidades para crear aplicaciones web.",
     link: "Learn More",
   },
 ];
@@ -38,12 +22,13 @@ const Services = () => {
               viewport={{ once: false, amount: 0.3 }}
               className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
             >
-              <h2 className="h2 text-violet-800 mb-6">Who am I?</h2>
+              <h2 className="h2 text-violet-800 mb-6">¿Quien soy?</h2>
               <h3 className="h3 max-w-[455px] mb-16">
-                I am an adventurer who loves programming and design.
+              Soy un aventurero que ama la escalada y por fin conseguí dar mis primeros pasos en el fascinante mundo del desarrolo web.
+
               </h3>
 
-              <button className="btn btn-sm">See my projects</button>
+              <button className="btn btn-sm">Bichea mis proyectos</button>
             </motion.div>
 
             <motion.div
