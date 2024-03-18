@@ -8,9 +8,9 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <nav className="fixed md:flex hidden items-center justify-start left-4 top-8 h-full overflow-hidden z-50">
+    <nav className="fixed lg:flex hidden items-center justify-start left-0 top-10 h-full  z-40">
       <div className="container mx-auto">
-        <div className="max-w-[500px] h-full bg-black/20 w-[96px] backdrop-blur-2x1 flex flex-col items-center justify-between gap-y-6 rounded-xl py-4 ">
+        <div className="max-w-[500px] h-full bg-black/20 w-[70px] backdrop-blur-2x1 flex flex-col items-center justify-between gap-y-6 rounded-xl py-2 ">
           <Link
             activeClass="active"
             smooth={true}

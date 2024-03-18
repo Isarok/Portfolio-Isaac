@@ -24,11 +24,14 @@ const Services = () => {
             >
               <h2 className="h2 text-violet-800 mb-6">¿Quien soy?</h2>
               <h3 className="h3 max-w-[455px] mb-16">
-              Soy un aventurero que ama la escalada y por fin conseguí dar mis primeros pasos en el fascinante mundo del desarrolo web.
-
+                Soy un aventurero que ama la escalada. Al cabo del tiempo decidí
+                reinventarme, al fin pude dar inicio, donde siempre quise, en el
+                fascinante universo del desarrollo web.
               </h3>
 
-              <button className="btn btn-sm">Bichea mis proyectos</button>
+              <button className="btn btn-lg rounded-full bg-[#5b21b6] px-6 py-2 transition-colors hover:text-[#5b21b6] hover:bg-transparent">
+                Bichea mis proyectos
+              </button>
             </motion.div>
 
             <motion.div
@@ -43,7 +46,7 @@ const Services = () => {
                   return (
                     <div
                       key={idx}
-                      className="border-b  border-white/20 h-[130px] mb-4 flex gap-x-4"
+                      className="border-b border-white/20 h-[130px] mb-4 flex gap-x-4"
                     >
                       <div className="max-w-[476px]">
                         <h4 className="text-xl -tracking-wide font-primary font-semibold">

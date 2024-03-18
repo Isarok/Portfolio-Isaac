@@ -11,7 +11,7 @@ export default {
         bgcolor:"#050913"
       },
       backgroundImage: {
-        site : "url('/src/images/bg.png')",
+        site : "url('/src/images/perfil1.png')",
         about : "url('/src/images/about.png')",
         services : "url('/src/images/services.png')",
       }
@@ -22,7 +22,7 @@ export default {
       },
       container: {
         padding: {
-          DEFAULT: "15px",
+          DEFAULT: "5px",
         }
       },
       screens: {

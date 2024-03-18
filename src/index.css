@@ -18,7 +18,7 @@
 
 .btn {
   background: #5b21b6;
-  box-shadow: 0px 4, 42184px 107.23px rgba(89, 86, 255, 0.51);
+  box-shadow: 10px 4.42184px 107.23px rgba(76, 106, 255, 0.81);
 }
 
 @layer base {
@@ -26,7 +26,7 @@
     @apply font-secondary text-lg leading-8;
   }
   .h2 {
-    @apply font-primary text-[2rem] mb-6 tracking-[10%] uppercase;
+    @apply font-primary text-[4rem] mb-6 tracking-[10%] uppercase;
   }
   .h3 {
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
