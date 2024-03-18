@@ -21,6 +21,15 @@
   box-shadow: 10px 4.42184px 107.23px rgba(76, 106, 255, 0.81);
 }
 
+.container {
+  width: 100%;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.container_navbar {
+  width: 100%;
+}
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8;

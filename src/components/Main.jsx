@@ -9,27 +9,18 @@ const Main = () => {
       className="section min-h-[75vh] lg:min-h-[40vh] flex items-center justify-center"
       id="home"
     >
-      <div className="container mx-4 lg:mx-auto lg:-mt-38 mt-4 max-w-full lg:max-w-[6xl]">
-        <div className="flex flex-col lg:flex-row lg:items-center gap-y-10 lg:gap-y-0 lg:gap-x-22">
-          <div className="flex-1 text-center font-secondary md:text-left lg:text-left">
-            <motion.h1
-              variants={fadeIn("up", 0.3)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className=" mb-6 text-2xl font-bold leading-[0.8] text-[12px]"
-            >
-              ISAAC <span>GARCIA</span>
-            </motion.h1>
+      <div className="container mx-2 lg:mx-auto lg:-mt-38 mt-1 max-w-full lg:max-w-[6xl]">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-y-10 lg:gap-y-0 lg:gap-x-20">
+          <div className="flex-1 text-center font-secondary md:text-right lg:text-left ">
             <motion.div
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 mt-2 font-primary text-[12px] lg:text-[25px] uppercase leading-[1] font-semibold"
+              className="mb-6 mt-1 font-primary text-[12px] lg:text-[59px] uppercase leading-[1] font-semibold"
             >
               <span className="">
-                Soy <></> un{" "}
+                <></>{" "}
               </span>
               <TypeAnimation
                 sequence={["Desarrollador Web Jr. Full Stack", 2024]}
@@ -46,24 +37,13 @@ const Main = () => {
               viewport={{ once: false, amount: 0.7 }}
               className=" mb-10 max-w-lg mx-auto xl:mx-8 lg:mx-0"
             >
-              ¡Hola! Soy un desarrollador web full stack Jr con una sólida
-              formación adquirida en un bootcamp de 6 meses con F5. Gracias a la
-              recreación de un entorno profesional, creando proyectos y
-              aplicando las tecnologías más versátiles y demandadas en el sector
-              de TI en España, he reforzado un amplio bagaje en el trabajo en
-              equipo, adquiriendo un gran abanico de habilidades a lo largo de
-              los años ya que siempre he trabajado en equipo. Mi capacidad de
-              adaptabilidad,respuesta rápida a nuevos retos y problemas, sin
-              descuidar el equipo e incluso potenciándolo, son aspectos que me
-              describen. Mi enfoque versátil me permite crear aplicaciones web
-              atractivas y funcionales. Utilizo tecnologías como React y Node.js
-              para el desarrollo frontend, y Express, MySQL y Sequelize para el
-              backend. Con mis habilidades de programación y modestas
-              habilidades en diseño, garantizo interfaces elegantes y óptimas
-              experiencias visuales. Estoy preparado para aportar mi experiencia
-              a proyectos, seguir aprendiendo ofreciendo lo mejor de mí. ¡Déjame
-              demostrarte cómo puedo contribuir al éxito de tus iniciativas
-              digitales!
+              Soy un desarrollador web full stack Jr, graduado de un bootcamp de
+              6 meses con F5. Poseo habilidades sólidas en desarrollo web y una
+              gran ética de trabajo en equipo. Mi enfoque versátil me permite
+              crear aplicaciones web funcionales y atractivas. Estoy
+              comprometido con el aprendizaje continuo y estoy dispuesto a poner
+              en practica todas mis habilidades al servicio de cualquier
+              proyecto.
             </motion.p>
 
             <motion.div
@@ -86,14 +66,14 @@ const Main = () => {
               viewport={{ once: false, amount: 0.7 }}
               className=" text-violet-800 flex items-center gap-x-8 max-w-max lg:mx:mx-0 mx-auto"
             >
-              <a href="#">
-                <FaGithub className="text-2x1" />
+              <a href="https://github.com/Isarok">
+                <FaGithub className="text-4xl" />
               </a>
-              <a href="#">
-                <FaDiscord className="text-2x1" />
+              <a href="https://discord.com/channels/@me">
+                <FaDiscord className="text-4xl" />
               </a>
-              <a href="#">
-                <FaLinkedin className="text-2x1" />
+              <a href="https://www.linkedin.com/in/isaac-garc%C3%ADa-romero-b73202a6/">
+                <FaLinkedin className="text-4xl" />
               </a>
             </motion.div>
           </div>
@@ -102,9 +82,13 @@ const Main = () => {
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             whileInView={"show"}
-            className="flex-1 max-w-[320px] lg:max-w-[480px]"
+            className="flex-1 max-w-[220px] lg:max-w-[380px]"
           >
-            <img src={img} alt="" />
+            <img
+              src={img}
+              alt=""
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
           </motion.div>
         </div>
       </div>

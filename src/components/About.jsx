@@ -8,11 +8,11 @@ const About = () => {
     threshold: 0.5,
   });
   return (
-    <section className="section" id="about" ref={ref}>
+    <section className="section py-48 lg:48" id="about" ref={ref}>
       <div className="container mx-auto">
-        <div className="flex lg:flex-row flex-col lg:justify-between gap-y-10 lg:gap-y-0 gap-x-0 lg:gap-x-30 h-screen">
+        <div className="flex lg:flex-row flex-col lg:justify-between gap-y-10  lg:gap-x-30 h-screen">
           <motion.div
-            variants={fadeIn("right", 0.5)}
+            variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView={"show"}
             className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top"
@@ -23,16 +23,19 @@ const About = () => {
             whileInView={"show"}
             className="flex-1"
           >
-            <h2 className="h2 text-violet-800">Sobre mí</h2>
-            <h3 className="mb-4">
-              En mi labor, soy un desarrollador web full stack Jr con una gran
-              actitud y motivación para afrontar retos en el desarrollo de
-              aplicaciones web.
+            <h2 className="font-primary text-[35px] mb-6 text-violet-800">
+              Sobre mí
+            </h2>
+            <h3 className="h3 mb-4">
+              Como desarrollador web full stack Jr, destaco por mi actitud
+              proactiva, capacidad de adaptación y motivación para enfrentar
+              diferentes desafíos de desarrollo en aplicaciones web..
             </h3>
 
             <p className="mb-6">
-              Quiero seguir aprendiendo, enfrentando nuevos desafíos.¡Listo para
-              contribuir y llevar proyectos al siguiente nivel!
+              Estoy entusiasmado por continuar aprendiendo y asi poder enfrentar
+              nuevos desafíos. Estoy preparado para contribuir y pasar al
+              siguiente nivel.
             </p>
           </motion.div>
         </div>
