@@ -53,9 +53,13 @@ const Main = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max mx-auto lg:mx-10 items-center gap-x-8 mb-12"
             >
-              <button className="btn btn-lg rounded-full bg-[#5b21b6] px-6 py-2 transition-colors hover:text-[#5b21b6] hover:bg-transparent">
-                Contacto
-              </button>
+              <span className="relative inline-block overflow-hidden rounded-full p-[1px]">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                <div className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gray-950 px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl">
+                  Contacto
+                </div>
+              </span>
+
               <a href="#contact">Mi Portoflio</a>
             </motion.div>
 
@@ -82,7 +86,7 @@ const Main = () => {
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             whileInView={"show"}
-            className="flex-1 max-w-[220px] lg:max-w-[380px]"
+            className="flex-1  max-w-[220px] lg:max-w-[380px] "
           >
             <img
               src={img}
