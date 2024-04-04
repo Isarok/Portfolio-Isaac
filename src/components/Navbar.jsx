@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="fixed lg:flex hidden items-center justify-start left-0 top-10 h-full  z-40">
       <div className="container_navbar mx-auto">
-        <div className="max-w-[500px] h-full bg-black/20 w-[70px] backdrop-blur-2x1 flex flex-col items-center justify-between gap-y-6 rounded-xl py-2 ">
+        <div className="max-w-[500px] h-full bg-cyan/20 w-[70px] backdrop-blur-2x1 flex flex-col items-center justify-between gap-y-6 rounded-xl py-2 ">
           <Link
             activeClass="active"
             smooth={true}
