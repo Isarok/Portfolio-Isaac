@@ -3,7 +3,8 @@ import { fadeIn } from "../variants.js";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import img from "../img/perfil1.png";
+import img from "../img/IsarockDev.png";
+
 const Main = () => {
   return (
     <section
@@ -94,7 +95,7 @@ const Main = () => {
             whileInView={"show"}
             className="flex-1  max-w-[220px] lg:max-w-[380px] "
           >
-            <div className="w-full h-full ">
+            <div className="">
               <img
                 className=""
                 src={img}

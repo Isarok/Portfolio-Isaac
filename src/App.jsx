@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
-import Services from "./components/Services";
+/* import Services from "./components/Services"; */
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Main />
       <About />
-      <Services />
+      {/* <Services /> */}
       <Project />
       <Contact />
     </div>

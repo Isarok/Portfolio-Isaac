@@ -27,7 +27,7 @@ const Navbar = () => {
             to="about"
             className="flex items-center justify-center w-[60px] h-[60px]"
           >
-            <MdOutlineMail className="cursor-pointer text-xl" />
+            <FaUserAlt className="cursor-pointer text-xl" />
           </Link>
           <Link
             activeClass="active"
@@ -36,7 +36,7 @@ const Navbar = () => {
             to="services"
             className="flex items-center justify-center w-[60px] h-[60px]"
           >
-            <FaUserAlt className="cursor-pointer text-xl" />
+            <MdOutlineMail className="cursor-pointer text-xl" />
           </Link>
           <Link
             activeClass="active"

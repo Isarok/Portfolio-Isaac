@@ -17,7 +17,7 @@
 }
 
 .btn {
-  background: #5b21b6;
+  background: #00c7c7;
   box-shadow: 10px 4.42184px 107.23px rgba(76, 106, 255, 0.81);
 }
 
@@ -30,7 +30,7 @@
   width: 100%;
 }
 
-@layer base {
+/* @layer base {
   body {
     @apply font-secondary text-lg leading-8;
   }
@@ -52,4 +52,4 @@
   .section {
     @apply py-8 lg:py-32 lg:h-screen flex items-center;
   }
-}
+} */
