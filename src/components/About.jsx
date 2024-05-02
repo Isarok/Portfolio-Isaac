@@ -14,8 +14,8 @@ import img from "../img/EscalandoB.png";
 const AboutMe = () => {
   return (
     <section
-      className="section min-h-[75vh] py-16 lg:48 lg:min-h-[40vh] flex items-center justify-center"
-      id="home"
+      className="section min-h-[75vh] py-[180px] lg:48 lg:min-h-[40vh] flex items-center justify-center"
+      id="aboutMe"
     >
       <div className="container mx-4 lg:mx-auto lg:-mt-38 mt-1 max-w-full lg:max-w-[6xl]">
         <div className="flex flex-col lg:flex-row lg:items-center gap-y-10 lg:gap-y-0 lg:gap-x-32">

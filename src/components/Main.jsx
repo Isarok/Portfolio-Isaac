@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
-import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import img from "../img/IsarockDev.png";
@@ -22,18 +21,7 @@ const Main = () => {
               className="mb-8 mt-2 font-primary text-[26px] lg:text-[40px] uppercase leading-[1] font-semibold"
             >
               <span className="mr-2">Soy</span>
-              <TypeAnimation
-                sequence={[
-                  "Isaac Garcia Romero.",
-                  2024,
-                  "Desarrollador Web Full Stack.",
-                  2024,
-                ]}
-                speed={40}
-                className="text-cyan-400"
-                wrapper="span"
-                repeat={Infinity}
-              />
+              <span className="text-cyan-400">Isaac Garcia Romero.</span>
             </motion.div>
 
             <motion.p
@@ -60,7 +48,10 @@ const Main = () => {
             >
               <span className="relative inline-block overflow-hidden rounded-full p-[1px]">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#D6FFFE_0%,#00FFF7_50%,#E2CBFF_100%)]" />
-                <div className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gray-950 px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl">
+                <div
+                  id="contact"
+                  className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gray-950 px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl"
+                >
                   Contacto
                 </div>
               </span>

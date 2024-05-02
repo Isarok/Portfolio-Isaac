@@ -30,7 +30,7 @@
   width: 100%;
 }
 
-/* @layer base {
+@layer base {
   body {
     @apply font-secondary text-lg leading-8;
   }
@@ -52,4 +52,4 @@
   .section {
     @apply py-8 lg:py-32 lg:h-screen flex items-center;
   }
-} */
+}

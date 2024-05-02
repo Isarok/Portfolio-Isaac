@@ -24,7 +24,7 @@ const Navbar = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            to="about"
+            to="aboutMe"
             className="flex items-center justify-center w-[60px] h-[60px]"
           >
             <FaUserAlt className="cursor-pointer text-xl" />
@@ -33,7 +33,7 @@ const Navbar = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            to="services"
+            to="contact"
             className="flex items-center justify-center w-[60px] h-[60px]"
           >
             <MdOutlineMail className="cursor-pointer text-xl" />
