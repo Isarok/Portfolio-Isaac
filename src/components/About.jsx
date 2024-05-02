@@ -4,13 +4,6 @@ import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
 import img from "../img/EscalandoB.png";
 
-/* const services = [
-  {
-    nome: "Full Stack Web Development",
-    desc: "He desarrollado una gran base de conocimientos y habilidades para crear aplicaciones web.",
-    link: "Learn More",
-  },
-]; */
 const AboutMe = () => {
   return (
     <section
@@ -33,45 +26,6 @@ const AboutMe = () => {
                 className="rounded-full max-w-[320px] lg:max-w-[480px]"
               />
             </motion.div>
-
-            {/*  <motion.div
-              variants={fadeIn("right", 0.5)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
-            >
-                    <div>
-                {services.map((item, idx) => {
-                  const { nome, desc, link } = item;
-                  return (
-                    <div
-                      key={idx}
-                      className="border-b border-white/20 h-[130px] mb-4 flex gap-x-4"
-                    >
-                      <div className="max-w-[476px]">
-                        <h4 className="text-xl -tracking-wide font-primary font-semibold">
-                          {nome}
-                        </h4>
-                        <p className="font-secondary leading-tinght mt-2 text-gray-300">
-                          {desc}
-                        </p>
-                      </div>
-                      <div className="flex flex-col flex-1 items-end">
-                        <a
-                          href="#"
-                          className="btn w-9 h-9 flex items-center justify-center"
-                        >
-                          <BsArrowRight />
-                        </a>
-                        <a href="#" className="text-sm">
-                          {link}
-                        </a>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div> 
-            </motion.div>*/}
           </div>
           <motion.div
             variants={fadeIn("right", 0.5)}

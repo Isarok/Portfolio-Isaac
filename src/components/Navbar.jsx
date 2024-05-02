@@ -1,7 +1,6 @@
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
 import { FaUserAlt } from "react-icons/fa";
-import { BiCommentDetail } from "react-icons/bi";
 import { MdOutlineWorkOutline } from "react-icons/md";
 
 import { Link } from "react-scroll";
@@ -29,6 +28,17 @@ const Navbar = () => {
           >
             <FaUserAlt className="cursor-pointer text-xl" />
           </Link>
+
+          <Link
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            to="projects"
+            className="flex items-center justify-center w-[60px] h-[60px]"
+          >
+            <MdOutlineWorkOutline className="cursor-pointer text-xl" />
+          </Link>
+
           <Link
             activeClass="active"
             smooth={true}
@@ -37,24 +47,6 @@ const Navbar = () => {
             className="flex items-center justify-center w-[60px] h-[60px]"
           >
             <MdOutlineMail className="cursor-pointer text-xl" />
-          </Link>
-          <Link
-            activeClass="active"
-            smooth={true}
-            spy={true}
-            to="projects"
-            className="flex items-center justify-center w-[60px] h-[60px]"
-          >
-            <BiCommentDetail className="cursor-pointer text-xl" />
-          </Link>
-          <Link
-            activeClass="active"
-            smooth={true}
-            spy={true}
-            to="contact"
-            className="flex items-center justify-center w-[60px] h-[60px]"
-          >
-            <MdOutlineWorkOutline className="cursor-pointer text-xl" />
           </Link>
         </div>
       </div>

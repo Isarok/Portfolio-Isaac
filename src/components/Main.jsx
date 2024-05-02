@@ -48,11 +48,15 @@ const Main = () => {
             >
               <span className="relative inline-block overflow-hidden rounded-full p-[1px]">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#D6FFFE_0%,#00FFF7_50%,#E2CBFF_100%)]" />
-                <div
-                  id="contact"
-                  className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gray-950 px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl"
-                >
-                  Contacto
+                <div className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gray-950 px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl">
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=isaac.lucerito@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-50"
+                  >
+                    Contacto
+                  </a>
                 </div>
               </span>
               <div className="flex flex-row justify-between gap-x-16">
