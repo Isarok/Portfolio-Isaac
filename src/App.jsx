@@ -9,8 +9,8 @@ import Project from "./components/Project";
 function App() {
   return (
     <div className=" bg-no-repeat bg-cover overflow-hidden text-white bg-black/90 mix-blend-800">
-      <Navbar />
       <Header />
+      <Navbar />
       <Main />
       <About />
       <Project />

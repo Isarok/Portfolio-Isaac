@@ -7,10 +7,10 @@ import img from "../img/IsarockDev.png";
 const Main = () => {
   return (
     <section
-      className="section min-h-[75vh] lg:min-h-[40vh] flex items-center justify-center"
+      className="section py-[20vh] xl:min-h-[60vh] 2xl:min-h-[90vh] flex items-center justify-center"
       id="home"
     >
-      <div className="container mx-2 lg:mx-auto lg:-mt-38 mt-1 max-w-full lg:max-w-[6xl]">
+      <div className="container mx-auto max-w-full lg:max-w-[6xl]">
         <div className="flex flex-col lg:flex-row lg:items-center gap-y-10 lg:gap-y-20 lg:gap-x-20">
           <div className="flex-1 text-center font-secondary md:text-left lg:text-left ">
             <motion.div
@@ -18,7 +18,7 @@ const Main = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 mt-2 font-primary text-[26px] lg:text-[40px] uppercase leading-[1] font-semibold"
+              className="mb-8 mt-2 font-primary text-[26px] lg:text-[40px] 2xl:text-[60px]  uppercase leading-[1] font-semibold"
             >
               <span className="mr-2">Soy</span>
               <span className="text-cyan-400">Isaac Garcia Romero.</span>
@@ -29,7 +29,7 @@ const Main = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.5 }}
-              className="mb-14 max-w-lg mx-auto lg:mx-0 text-justify "
+              className="mb-14 max-w-lg mx-auto lg:mx-0 2xl:mx-0 2xl:max-w-3xl 2xl:text-lg  "
             >
               Graduado de un bootcamp de 8 meses Fullstack + Cyberseguridad con
               F5. Poseo habilidades sólidas en desarrollo web y una gran ética
@@ -44,33 +44,39 @@ const Main = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max mx-auto lg:mx-10 items-center gap-x-8 mb-12"
+              className="flex max-w-max mx-auto lg:mx-0 2xl:mx-0 items-center gap-x-8 mb-12 2xl:mb-0"
             >
-              <span className="relative inline-block overflow-hidden rounded-full p-[1px]">
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#D6FFFE_0%,#00FFF7_50%,#E2CBFF_100%)]" />
-                <div className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gray-950 px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl">
-                  <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=isaac.lucerito@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-50"
+              <div
+                className="flex lg:flex-row sm:flex-row justify-between gap-x-16 
+                              2xl:gap-x-24"
+              >
+                <span className="relative inline-block overflow-hidden rounded-md p-[1px]">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#D6FFFE_0%,#00FFF7_50%,#E2CBFF_100%)]" />
+                  <div
+                    className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-gray-950 px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl
+                    2xl:text-lg "
                   >
-                    Contacto
-                  </a>
-                </div>
-              </span>
-              <div className="flex flex-row justify-between gap-x-16">
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=isaac.lucerito@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-50"
+                    >
+                      Contacto
+                    </a>
+                  </div>
+                </span>
                 <a href="https://github.com/Isarok">
-                  <FaGithub className="text-4xl text-cyan-400" />
+                  <FaGithub className="text-4xl 2xl:text-7xl text-cyan-400" />
                 </a>
                 <a href="https://discord.com/channels/@me">
-                  <FaDiscord className="text-4xl text-cyan-400" />
+                  <FaDiscord className="text-4xl 2xl:text-7xl text-cyan-400" />
                 </a>
                 <a href="https://www.linkedin.com/in/isaac-garc%C3%ADa-romero-b73202a6/">
-                  <FaLinkedin className="text-4xl text-cyan-400" />
+                  <FaLinkedin className="text-4xl 2xl:text-7xl text-cyan-400" />
                 </a>
                 <a href="https">
-                  <SiGmail className="text-4xl text-cyan-400" />
+                  <SiGmail className="text-4xl 2xl:text-7xl text-cyan-400" />
                 </a>
               </div>
             </motion.div>
@@ -88,7 +94,7 @@ const Main = () => {
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             whileInView={"show"}
-            className="flex-1  max-w-[220px] lg:max-w-[380px] "
+            className="flex-1  max-w-[220px] lg:max-w-[380px] 2xl:max-w-[460px] lg:mx-0"
           >
             <div className="">
               <img

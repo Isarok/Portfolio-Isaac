@@ -4,12 +4,57 @@ import Ecollectic from "../img/Ecollectic.png";
 import Apolliculture from "../img/Apolliculture.png";
 import EcoDers from "../img/EcoDers.png";
 import Empleate from "../img/Empleate.png";
+import { FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
+import {
+  SiTypescript,
+  SiJavascript,
+  SiTailwindcss,
+  SiNpm,
+  SiMysql,
+  SiVite,
+  SiAxios,
+} from "react-icons/si";
+import { FaGitAlt, FaGithub, FaReact } from "react-icons/fa6";
 
 const Project = () => {
   return (
-    <section className="section h-screen" id="projects">
+    <section
+      className="section h-screen py-[20vh] xl:min-h-[60vh] 2xl:min-h-[90vh]"
+      id="projects"
+    >
       <div className="container mx-auto">
-        <div className="flex lg:flex-row flex-col gap-x-10">
+        <motion.div
+          variants={fadeIn("down", 0.6)}
+          initial="hidden"
+          whileInView={"show"}
+          className="flex-1 2xl:max-w-[100%] lg:mx-0"
+        >
+          <div>
+            <h2 className="h2 xl:max-w-[100%] container leading-tight font-semibold 2xl:text-2xl text-xl text-cyan-400  ">
+              Estos son los ultimos proyectos en los que colaboré.
+            </h2>
+            <p className="max-w-[100%] container 2xl:max-w-3xl mb-4 2xl:text-xl">
+              Puedes verlos acontinuación. Usamos metodologia scrum, control de
+              versiones GitHub y Git Bash para llevarlos a cabo. Despliegue en
+              githubpages, vercel y netlify.
+            </p>
+            {/* <span className="text-3xl justify-center flex flex-row gap-2">
+              <FaHtml5 />
+              <FaCss3Alt />
+              <SiJavascript />
+              <SiTypescript />
+              <SiTailwindcss />
+              <FaReact />
+              <FaGitAlt />
+              <FaGithub />
+              <SiNpm />
+              <FaNodeJs />
+              <SiMysql />
+            </span> */}
+          </div>
+        </motion.div>
+
+        <div className="flex lg:flex-row flex-col gap-x-0 container">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -17,15 +62,6 @@ const Project = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 flex flex-col gap-y-12 m-10 lg:mb-0"
           >
-            <div>
-              <h2 className="h2 leading-tight font-semibold text-xl text-cyan-400 ">
-                Mis ultimos proyectos
-              </h2>
-              <p className="max-w-sm mb-16">
-                Puedes verlos aqui, espero que te gusten.
-              </p>
-            </div>
-
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 z-40 w-full h-full absolute transition-all duration-300 cursor-pointer"></div>
 
@@ -37,13 +73,16 @@ const Project = () => {
 
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                 <span className="text-cyan-400 lg:text-3xl text-2xl">
-                  Desarrollador web
+                  Frontend & fake api
                 </span>
               </div>
 
               <div className="absolute -bottom-full left-12 group-hover:bottom-12 transition-all duration-500 z-50">
-                <span className="text-white lg:text-4xl text-2xl">
-                  Front y fake api
+                <span className="text-white lg:text-2xl text-2xl flex flex-row gap-2">
+                  <FaHtml5 className="text-red-400" />
+                  <FaCss3Alt className="text-blue-400" />
+                  <SiJavascript className="text-yellow-400" />
+                  <FaReact className="text-cyan-400" />
                 </span>
               </div>
             </div>
@@ -58,20 +97,29 @@ const Project = () => {
               />
 
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-cyan-400 lg:text-3xl text-2xl">
-                  Desarrollador web
+                <span className="text-cyan-400  lg:text-3xl text-2xl">
+                  Frontend & Backend
                 </span>
               </div>
 
               <div className="absolute -bottom-full left-12 group-hover:bottom-12 transition-all duration-500 z-50">
                 <span
-                  className="text-white lg:text-4xl text-2xl cursor-pointer"
+                  className="text-white lg:text-2xl text-2xl flex flex-wrap gap-2 cursor-pointer"
                   onClick={() =>
                     (window.location.href =
                       "https://empleate-con-talento-front.vercel.app/")
                   }
                 >
-                  Front & mock api
+                  {/* <FaHtml5 className="text-red-400" />
+                  <FaCss3Alt className="text-blue-400" /> */}
+                  <SiJavascript className="text-yellow-400" />
+                  <SiTypescript className="text-blue-700" />
+                  <FaReact className="text-cyan-400" />
+                  <SiVite className="text-purple-800" />
+                  <SiTailwindcss className="text-cyan-400" />
+
+                  <SiMysql className="text-orange-400" />
+                  <FaNodeJs className="text-green-400" />
                 </span>
               </div>
             </div>
@@ -82,7 +130,7 @@ const Project = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-12 m-10 lg:mb-0"
+            className="flex-1 flex flex-col gap-y-12 m-10 "
           >
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 z-40 w-full h-full absolute transition-all duration-300 cursor-pointer"></div>
@@ -93,14 +141,21 @@ const Project = () => {
               />
 
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-cyan-400 lg:text-3xl text-2xl">
-                  Desarrollador web
+                <span className="text-cyan-400 lg:text-3xl text-2xl ">
+                  Frontend & Backend
                 </span>
               </div>
 
               <div className="absolute -bottom-full left-12 group-hover:bottom-12 transition-all duration-500 z-50">
-                <span className="text-white lg:text-4xl text-2xl">
-                  Front y Backend
+                <span className="text-white lg:text-2xl text-2xl flex flex-row gap-2">
+                  {/* <FaHtml5 className="text-red-400" />
+                  <FaCss3Alt className="text-blue-400" /> */}
+                  <SiTypescript className="text-blue-700" />
+                  <FaReact className="text-cyan-400" />
+                  <SiVite className="text-purple-800" />
+                  <SiTailwindcss className="text-cyan-400" />
+                  <SiMysql className="text-orange-400" />
+                  <FaNodeJs className="text-green-400" />
                 </span>
               </div>
             </div>
@@ -121,12 +176,15 @@ const Project = () => {
                       "https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/")
                   }
                 >
-                  Desarrollador web
+                  Frontend
                 </span>
               </div>
 
               <div className="absolute -bottom-full left-12 group-hover:bottom-12 transition-all duration-500 z-50">
-                <span className="text-white lg:text-4xl text-2xl">Front</span>
+                <span className="text-white lg:text-2xl text-2xl flex flex-row gap-2">
+                  <FaHtml5 className="text-red-500" />
+                  <FaCss3Alt className="text-blue-500" />
+                </span>
               </div>
             </div>
           </motion.div>
