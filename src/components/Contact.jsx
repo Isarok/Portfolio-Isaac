@@ -52,7 +52,7 @@ const Contact = () => {
               placeholder="Escribe tu mensaje..."
             ></textarea>
 
-            <button className="btn btn-lg rounded-md bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent">
+            <button className="btn btn-lg rounded-md text-black bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent">
               Enviar
             </button>
           </motion.div>

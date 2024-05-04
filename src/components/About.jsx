@@ -44,7 +44,7 @@ const AboutMe = () => {
             </h3>
 
             <Link to="projects">
-              <button className="rounded-md bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent">
+              <button className="rounded-md text-black bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent">
                 Curiosea mis proyectos
               </button>
             </Link>
