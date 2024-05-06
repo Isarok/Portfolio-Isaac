@@ -65,13 +65,12 @@ const Project = () => {
             className="flex-1 flex flex-col gap-y-12 m-10 xl:mb-0 "
           >
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div
+              <a
                 className="group-hover:bg-black/70 z-40 w-full h-full absolute transition-all duration-300 cursor-pointer"
-                onClick={() =>
-                  (window.location.href =
-                    "https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/")
-                }
-              ></div>
+                href="https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
               <img
                 src={EcoDers}
                 alt=" Imagen de proyecto EcoDers"
@@ -156,13 +155,12 @@ const Project = () => {
               </div>
             </div>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div
+              <a
                 className="group-hover:bg-black/70 z-40 w-full h-full absolute transition-all duration-300 cursor-pointer"
-                onClick={() =>
-                  (window.location.href =
-                    "https://empleate-con-talento-front.vercel.app/")
-                }
-              ></div>
+                href="https://empleate-con-talento-front.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
 
               <img
                 src={Empleate}

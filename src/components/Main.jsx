@@ -66,16 +66,32 @@ const Main = () => {
                     </a>
                   </div>
                 </span>
-                <a href="https://github.com/Isarok">
+                <a
+                  href="https://github.com/Isarok"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaGithub className="text-4xl 2xl:text-7xl text-cyan-400" />
                 </a>
-                <a href="https://discord.com/channels/@me">
+                <a
+                  href="https://discord.com/channels/@me"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaDiscord className="text-4xl 2xl:text-7xl text-cyan-400" />
                 </a>
-                <a href="https://www.linkedin.com/in/isaac-garc%C3%ADa-romero-b73202a6/">
+                <a
+                  href="https://www.linkedin.com/in/isaac-garc%C3%ADa-romero-b73202a6/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaLinkedin className="text-4xl 2xl:text-7xl text-cyan-400" />
                 </a>
-                <a href="https">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=isaac.lucerito@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <SiGmail className="text-4xl 2xl:text-7xl text-cyan-400" />
                 </a>
               </div>
@@ -94,7 +110,7 @@ const Main = () => {
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             whileInView={"show"}
-            className="flex-1 max-w-[220px] lg:max-w-[380px] 2xl:max-w-[460px] lg:mx-0 "
+            className="flex-1 max-w-[220px] xl:max-w-[380px] 2xl:max-w-[460px] lg:mx-0 "
           >
             <div className="">
               <img
