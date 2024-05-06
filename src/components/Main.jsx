@@ -12,7 +12,7 @@ const Main = () => {
     >
       <div className="container mx-auto max-w-full lg:max-w-[6xl]">
         <div className="flex flex-col lg:flex-row lg:items-center gap-y-10 lg:gap-y-20 lg:gap-x-20">
-          <div className="flex-1 text-center font-secondary md:text-left lg:text-left ">
+          <div className="flex-1 font-secondary md:text-left lg:text-left ">
             <motion.div
               variants={fadeIn("up", 0.5)}
               initial="hidden"
@@ -112,12 +112,17 @@ const Main = () => {
             whileInView={"show"}
             className="flex-1 max-w-[220px] xl:max-w-[380px] 2xl:max-w-[460px] lg:mx-0 "
           >
-            <div className="">
+            <div className="shadow-outline">
               <img
-                className=""
                 src={img}
-                alt=""
-                style={{ maxWidth: "100%", height: "auto" }}
+                alt="Yo sonriendo a la cámara"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  filter:
+                    "drop-shadow(0px 4.42184px 37.23px rgba(79, 209, 197, 1))",
+                }}
+                className="max-w-[120px] lg:max-w-[280px]"
               />
             </div>
           </motion.div>
