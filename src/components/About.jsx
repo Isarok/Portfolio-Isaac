@@ -19,7 +19,12 @@ const AboutMe = () => {
               <img
                 src={img}
                 alt="Isaac escalando en el cerro del hierro"
-                style={{ maxWidth: "100%", height: "auto" }}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  filter:
+                    "drop-shadow(0px 4.42184px 37.23px rgba(79, 209, 197, 1))",
+                }}
                 className="max-w-[120px] lg:max-w-[280px]"
               />
             </motion.div>
