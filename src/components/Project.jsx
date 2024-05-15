@@ -132,6 +132,13 @@ const Project = () => {
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 z-40 w-full h-full absolute transition-all duration-300 cursor-pointer"></div>
 
+              <a
+                className="group-hover:bg-black/70 z-40 w-full h-full absolute transition-all duration-300 cursor-pointer"
+                href="https://ecollec-isaacs-projects-b15fcb7e.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              ></a>
+
               <img
                 src={Ecollectic}
                 alt="Imagen de proyecto Ecollectic"
