@@ -6,15 +6,15 @@ import img from "../img/EscalandoB.png";
 
 const AboutMe = () => {
   return (
-    <section className="section py-[20vh] xl:min-h-[80vh]" id="aboutMe">
+    <section className="section py-[10vh] md:py-[20vh] lg:py-[30vh] xl:min-h-[60vh] 2xl:min-h-[90vh]" id="aboutMe">
       <div className="container mx-auto ">
-        <div className="flex flex-col lg:flex-row lg:items-center gap-y-10 lg:gap-y-0 lg:gap-x-32">
+        <div className="flex flex-col justify-center items-center lg:flex-row lg:items-center gap-y-10 lg:gap-y-0 lg:gap-x-32 2xl:gap-x-96">
           <div className="flex-1 text-center font-secondary md:text-right lg:text-left">
             <motion.div
               variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              className="btn rounded-full flex-1 max-w-[320px] lg:max-w-[480px]"
+              className="btn rounded-full flex-1 max-w-[480px] lg:max-w-[480px]"
             >
               <img
                 src={img}
@@ -25,7 +25,7 @@ const AboutMe = () => {
                   filter:
                     "drop-shadow(0px 4.42184px 37.23px rgba(79, 209, 197, 1))",
                 }}
-                className="max-w-[120px] lg:max-w-[280px]"
+                className="max-w-[220px] lg:max-w-[280px] "
               />
             </motion.div>
           </div>
@@ -39,7 +39,7 @@ const AboutMe = () => {
             <h2 className="font-primary text-[35px] mb-6 2xl:text-[60px] text-cyan-400 ">
               ¿Quien soy?
             </h2>
-            <h3 className="h3 max-w-[600px] 2xl:max-w-3xl 2xl:text-lg  mb-12">
+            <h3 className="h3 max-w-[600px] mb-12 2xl:max-w-[600px] 2xl:text-xl 2xl:text-2xl  ">
               Después de años explorando las alturas, desafiando límites en la
               escalada y haciendo tours internacionales con grandes artistas
               decidí que era hora de explorar nuevos horizontes. Es un giro de
