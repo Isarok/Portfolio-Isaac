@@ -14,7 +14,7 @@ const AboutMe = () => {
               variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              className="btn rounded-full flex-1 max-w-[480px] lg:max-w-[480px]"
+              className="btn rounded-full flex-1 max-w-[480px] lg:max-w-[480px] 2xl:max-w-[800px]"
             >
               <img
                 src={img}
@@ -39,7 +39,7 @@ const AboutMe = () => {
             <h2 className="font-primary text-[35px] mb-6 2xl:text-[60px] text-cyan-400 ">
               ¿Quien soy?
             </h2>
-            <h3 className="h3 max-w-[600px] mb-12 2xl:max-w-[600px] 2xl:text-xl 2xl:text-2xl  ">
+            <h3 className=" max-w-[600px] mb-12 2xl:mb-20 2xl:max-w-[800px] 2xl:text-xl 2xl:text-3xl  ">
               Después de años explorando las alturas, desafiando límites en la
               escalada y haciendo tours internacionales con grandes artistas
               decidí que era hora de explorar nuevos horizontes. Es un giro de

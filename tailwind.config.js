@@ -8,29 +8,29 @@ export default {
   theme: {
     extend: {
       colors: {
-        bgcolor:"#050913"
+        bgcolor: "#050913"
       },
       backgroundImage: {
-        site : "url('/src/images/perfil1.png')",
-        about : "url('/src/images/about.png')",
-        services : "url('/src/images/services.png')",
+        site: "url('/src/images/perfil1.png')",
+        about: "url('/src/images/about.png')",
+        services: "url('/src/images/services.png')",
       }
     },
-      fontFamily: {
-        primary: "Poppins",
-        secondary: "Roboto",
-      },
-      container: {
-        padding: {
-          DEFAULT: "15px",
-        }
-      },
-      screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "960px",
-        xl: "1200px",
-      },   
+    fontFamily: {
+      primary: "Poppins",
+      secondary: "Roboto",
+    },
+    container: {
+      padding: {
+        DEFAULT: "15px",
+      }
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "960px",
+      xl: "1200px",
+    },
   },
   plugins: [],
 }

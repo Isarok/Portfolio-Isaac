@@ -48,17 +48,18 @@ const Main = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex flex-col mx-auto  items-center gap-x-0 
-                         md:gap-8 md:flex md:flex-row 
+              className="flex flex-col mx-auto items-center gap-y-4
+                         md:gap-8 md:flex md:flex-row md:justify-start
+                         lg:gap-20 lg:justify-start
                          
-                        2xl:mb-0 2xl:mx-0
+                        2xl:mb-0 2xl:mx-0 
                         
                       "
             >
-              <span className="relative inline-block overflow-hidden my-4 rounded-md p-[2px]">
+              <span className="relative inline-block overflow-hidden my-6 rounded-md p-[2px]">
                   <span className="absolute inset-[-100%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#D6FFFE_0%,#00FFF7_50%,#E2CBFF_100%)]" />
                   <div
-                    className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-gray-950 px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl
+                    className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-gray-950  px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl
                     2xl:text-2xl "
                   >
                     <a
@@ -73,10 +74,10 @@ const Main = () => {
                   </div>
                 </span>
               <div
-                className="flex justify-around gap-x-10 gap-y-4
+                className="flex justify-around m-4 md:m-0 gap-x-10 gap-y-4
                           sm:gap-x-16 
-                          lg:flex-row 
-                          2xl:gap-x-24"
+                          lg:flex-row  
+                          2xl:gap-x-28"
               >
                 
                 <a

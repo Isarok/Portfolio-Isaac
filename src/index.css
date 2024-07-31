@@ -31,6 +31,13 @@
   width: 100%;
 }
 
+.droppo {
+  maxWidth: "100%";
+  height: "auto";
+  filter:"drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))"
+
+}
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8;

@@ -40,7 +40,7 @@ const Project = () => {
               versiones GitHub y Git Bash para llevarlos a cabo. Despliegue en
               githubpages, vercel y netlify.
             </p>
-            {/* <span className="text-3xl justify-center flex flex-row gap-2">
+           {/*  <span className="text-3xl justify-center flex flex-row gap-2">
               <FaHtml5 />
               <FaCss3Alt />
               <SiJavascript />
@@ -77,17 +77,40 @@ const Project = () => {
                 className="group-hover:scale-125 transition-all duration-500 cursor-pointer"
               />
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-cyan-400 lg:text-3xl sm:text-sm text-2xl  ">
+              <div className="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50
+                              md:group-hover:bottom-32 md:left-12
+                              lg:left-12">
+                <span className="text-cyan-400 md:text-3xl lg:text-3xl sm:text-sm text-1xl  ">
                   Frontend
                 </span>
               </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-12 transition-all duration-500 z-50">
-                <span className="text-white lg:text-2xl text-2xl flex flex-row gap-2">
+              <div className="absolute -bottom-full left-4 group-hover:bottom-16 transition-all duration-500 z-50 
+                              md:left-12 md:gap-4 md:group-hover:bottom-12">
+                <span className="flex flex-row gap-2 text-white 
+                                md:text-[40px] 
+                                lg:text-1xl text-1xl ">
                   <FaHtml5 className="text-red-500" />
-                  <FaCss3Alt className="text-blue-500" />
-                </span>
+                  <FaCss3Alt className="text-blue-500" />   
+                </span >
+                <div className="absolute -bottom-full left-[-60px] group-hover:bottom-[25px] transition-all duration-500 z-50
+                                md:left-72 md:group-hover:bottom-[-8px]
+                                lg:left-40 lg:group-hover:bottom-[70px]">
+                  <a href="https://github.com/Isarok/Eco-Ders-2"
+                     className="cursor-pointer text-gray-200"                 
+                     target="_blank"
+                     rel="noreferrer">
+                    <FaGithub 
+                        style={{
+                          maxWidth: "100%",
+                          height: "auto",
+                          filter:
+                            "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
+                        }}
+                    className="flex flex-row justify-between mx-36 text-3xl lg:text-6xl "
+                    />
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -99,14 +122,18 @@ const Project = () => {
                 className="group-hover:scale-125 transition-all duration-500 cursor-pointer"
               />
 
-              <div className="absolute -bottom-full left-6 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-cyan-400 lg:text-3xl text-2xl ">
+              <div className="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50
+              md:group-hover:bottom-32 md:left-12">
+                <span className="text-cyan-400 md:text-3xl lg:text-3xl sm:text-sm text-1xl  ">
                   Frontend & Backend
                 </span>
               </div>
 
-              <div className="absolute -bottom-full left-6 flex justify-center group-hover:bottom-12 transition-all duration-500 z-50">
-                <span className="text-white lg:text-2xl text-2xl flex flex-row gap-2">
+              <div className="absolute -bottom-full left-4 flex justify-center group-hover:bottom-16 transition-all duration-500 z-50
+              md:left-12 md:gap-4 md:group-hover:bottom-12">
+                <span className="flex flex-row gap-2 text-white 
+                md:text-[40px] 
+                lg:text-1xl text-1xl">
                   {/* <FaHtml5 className="text-red-400" />
                   <FaCss3Alt className="text-blue-400" /> */}
                   <SiTypescript className="text-blue-700" />
@@ -118,6 +145,24 @@ const Project = () => {
                   <SiExpress className="text-gray-400" />
                   <SiPrisma className="text-white-400" />
                 </span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-[-2] transition-all duration-500 z-50
+                                md:left-72 md:group-hover:bottom-[-8px]
+                                lg:left-40 lg:group-hover:bottom-[70px] ">
+                  <a href="https://github.com/Isarok/Apolliculture"
+                     className="cursor-pointer text-gray-200"                 
+                     target="_blank"
+                     rel="noreferrer">
+                    <FaGithub 
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                      filter:
+                        "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
+                    }}
+                    className="flex flex-row justify-between mx-36 text-5xl lg:text-6xl "
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -145,20 +190,43 @@ const Project = () => {
                 className="group-hover:scale-125 transition-all duration-500 cursor-pointer"
               />
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-cyan-400 lg:text-3xl text-2xl">
+              <div className="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50
+                              md:group-hover:bottom-32 md:left-12
+                              lg:left-12">
+                <span className="text-cyan-400 md:text-3xl lg:text-3xl sm:text-sm text-1xl">
                   Frontend 
                 </span>
               </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-12 transition-all duration-500 z-50">
-                <span className="text-white lg:text-2xl text-2xl flex flex-row gap-2">
+              <div className="absolute -bottom-full left-4 group-hover:bottom-16 transition-all duration-500 z-50
+                              md:left-12 md:gap-4 md:group-hover:bottom-12">
+                <span className="flex flex-row gap-2 text-white 
+                                 md:text-[40px] 
+                                 lg:text-1xl text-1xl ">
                   <FaHtml5 className="text-red-400" />
                   <FaCss3Alt className="text-blue-400" />
                   <SiJavascript className="text-yellow-400" />
                   <FaReact className="text-cyan-400" />
                   <SiTailwindcss className="text-cyan-400"></SiTailwindcss>
                 </span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-[-2] transition-all duration-500 z-50
+                                md:left-72 md:group-hover:bottom-[-8px]
+                                lg:left-40 lg:group-hover:bottom-[70px]">
+                  <a href="https://github.com/Isarok/Apolliculture"
+                     className="cursor-pointer text-gray-200"                 
+                     target="_blank"
+                     rel="noreferrer">
+                    <FaGithub
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                      filter:
+                        "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
+                    }} 
+                    className="flex flex-row justify-between mx-36 text-5xl lg:text-6xl"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
@@ -175,14 +243,19 @@ const Project = () => {
                 className="group-hover:scale-125 transition-all duration-500 cursor-pointer"
               />
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-cyan-400 lg:text-3xl text-2xl cursor-pointer">
+              <div className="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50
+                              md:group-hover:bottom-32 md:left-12
+                              lg:left-12">
+                <span className="text-cyan-400 md:text-3xl lg:text-3xl sm:text-sm text-1xl">
                   Frontend & Backend
                 </span>
               </div>
 
-              <div className="absolute -bottom-full left-12 group-hover:bottom-12 transition-all duration-500 z-50">
-                <span className="text-white lg:text-2xl text-2xl flex flex-wrap gap-2 cursor-pointer">
+              <div className="absolute -bottom-full left-4 group-hover:bottom-16 transition-all duration-500 z-50
+                              md:left-12 md:gap-4 md:group-hover:bottom-12">
+                <span className="flex flex-row gap-2 text-white 
+                                 md:text-[40px] 
+                                 lg:text-1xl text-1xl ">
                   {/* <FaHtml5 className="text-red-400" />
                   <FaCss3Alt className="text-blue-400" /> */}
                   <SiJavascript className="text-yellow-400" />
@@ -194,6 +267,24 @@ const Project = () => {
                   <FaNodeJs className="text-green-400" />
                   <SiAxios className="text-purple-500" />
                 </span>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-[-2] transition-all duration-500 z-50
+                                md:left-72 md:group-hover:bottom-[-8px]
+                                lg:left-40 lg:group-hover:bottom-[70px]">
+                  <a href="https://github.com/Isarok/EmpleateConTalentoFront"
+                     className="cursor-pointer text-gray-200"                 
+                     target="_blank"
+                     rel="noreferrer">
+                    <FaGithub
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                      filter:
+                        "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
+                    }} 
+                    className="flex flex-row justify-between mx-36 text-5xl  lg:text-6xl"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>
