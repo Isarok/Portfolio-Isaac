@@ -1,10 +1,19 @@
+import React, { useRef } from 'react';
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
+import { fadeIn } from "../utils/variants";
+import { sendEmail } from '../utils/emailService'; // Asegúrate de que la ruta sea correcta
 
 const Contact = () => {
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendEmail(form);
+  };
+
   return (
     <section
-      className=" py-[20vh] md:py-[30vh] lg:py-[40vh] xl:min-h-[60vh] 2xl:min-h-[90vh] flex items-center justify-center "
+      className="py-[20vh] md:py-[30vh] lg:py-[40vh] xl:min-h-[60vh] 2xl:min-h-[90vh] flex items-center justify-center"
       id="contact"
     >
       <div className="container mx-auto">
@@ -33,28 +42,33 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 lg:mt-0 mt-8 border rounded-2xl flex flex-col gap-y-4 pb-20 p-6 items-start "
           >
-            <input
-              type="text"
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-cyan-400 transition-all duration-300"
-              placeholder="Nombre"
-            />
+            <form ref={form} onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="user_name"
+                className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-cyan-400 transition-all duration-300"
+                placeholder="Nombre"
+              />
 
-            <input
-              type="text"
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-cyan-400 transition-all duration-300"
-              placeholder="Email"
-            />
+              <input
+                type="email"
+                name="user_email"
+                className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-cyan-400 transition-all duration-300"
+                placeholder="Email"
+              />
 
-            <textarea
-              cols="30"
-              rows="2"
-              className="bg-transparent border-b py-2 outline-none w-full placeholder:text-white focus:border-cyan-400 transition-all duration-300 resize-none"
-              placeholder="Escribe tu mensaje..."
-            ></textarea>
+              <textarea
+                name="message"
+                cols="30"
+                rows="2"
+                className="bg-transparent border-b py-2 outline-none w-full placeholder:text-white focus:border-cyan-400 transition-all duration-300 resize-none"
+                placeholder="Escribe tu mensaje..."
+              ></textarea>
 
-            <button className="btn btn-lg rounded-md text-black bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent">
-              Enviar
-            </button>
+              <button className="btn btn-lg rounded-md text-black bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent">
+                Enviar
+              </button>
+            </form>
           </motion.div>
         </div>
       </div>

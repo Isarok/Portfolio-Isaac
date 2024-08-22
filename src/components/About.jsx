@@ -1,6 +1,6 @@
 /* import { BsArrowRight } from "react-icons/bs"; */
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
+import { fadeIn } from "../utils/variants";
 import { Link } from "react-scroll";
 import img from "../img/EscalandoB.png";
 

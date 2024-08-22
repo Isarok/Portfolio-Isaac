@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants.js";
+import { fadeIn } from "../utils/variants";
 import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import img from "../img/IsarockDev.png";

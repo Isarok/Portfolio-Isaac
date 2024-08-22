@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
+import { fadeIn } from "../utils/variants";
 import Ecollectic from "../img/Ecollectic.png";
 import Apolliculture from "../img/Apolliculture.png";
 import EcoDers from "../img/EcoDers.png";
