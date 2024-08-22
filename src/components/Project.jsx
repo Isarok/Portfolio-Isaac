@@ -35,7 +35,7 @@ const Project = () => {
             <h2 className="h2 xl:max-w-[100%] xl:container leading-tight font-semibold 2xl:text-2xl text-xl text-cyan-400  ">
               Estos son los ultimos proyectos en los que colaboré en equipo como propios.
             </h2>
-            <p className="max-w-[100%] xl:container mb-4 2xl:max-w-3xl 2xl:text-xl ">
+            <p className="max-w-[100%] xl:container mb-4 2xl:text-xl ">
               Puedes verlos acontinuación. Usamos metodologia scrum, control de
               versiones GitHub y Git Bash para llevarlos a cabo. Despliegue en
               githubpages, vercel y netlify.
@@ -93,8 +93,8 @@ const Project = () => {
                   <FaHtml5 className="text-red-500" />
                   <FaCss3Alt className="text-blue-500" />   
                 </span >
-                <div className="absolute -bottom-full left-[-60px] group-hover:bottom-[25px] transition-all duration-500 z-50
-                                md:left-72 md:group-hover:bottom-[-8px]
+                <div className="absolute -bottom-full left-12 group-hover:bottom-[25px] transition-all duration-500 z-50
+                                md:left-72 md:group-hover:bottom-[70px] 
                                 lg:left-40 lg:group-hover:bottom-[70px]">
                   <a href="https://github.com/Isarok/Eco-Ders-2"
                      className="cursor-pointer text-gray-200"                 
@@ -107,7 +107,9 @@ const Project = () => {
                           filter:
                             "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
                         }}
-                    className="flex flex-row justify-between mx-36 text-3xl lg:text-6xl "
+                    className="flex flex-row justify-between mx-36 text-3xl 
+                    md:text-6xl 
+                    lg:text-6xl "
                     />
                   </a>
                 </div>
@@ -145,21 +147,23 @@ const Project = () => {
                   <SiExpress className="text-gray-400" />
                   <SiPrisma className="text-white-400" />
                 </span>
-                <div className="absolute -bottom-full left-12 group-hover:bottom-[-2] transition-all duration-500 z-50
-                                md:left-72 md:group-hover:bottom-[-8px]
-                                lg:left-40 lg:group-hover:bottom-[70px] ">
-                  <a href="https://github.com/Isarok/Apolliculture"
+                <div className="absolute -bottom-full left-12 group-hover:bottom-[25px] transition-all duration-500 z-50
+                                md:left-72 md:group-hover:bottom-[70px] 
+                                lg:left-40 lg:group-hover:bottom-[70px]">
+                  <a href="https://github.com/Isarok/Eco-Ders-2"
                      className="cursor-pointer text-gray-200"                 
                      target="_blank"
                      rel="noreferrer">
                     <FaGithub 
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                      filter:
-                        "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
-                    }}
-                    className="flex flex-row justify-between mx-36 text-5xl lg:text-6xl "
+                        style={{
+                          maxWidth: "100%",
+                          height: "auto",
+                          filter:
+                            "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
+                        }}
+                    className="flex flex-row justify-between mx-36 text-3xl 
+                    md:text-6xl 
+                    lg:text-6xl "
                     />
                   </a>
                 </div>
@@ -209,21 +213,23 @@ const Project = () => {
                   <FaReact className="text-cyan-400" />
                   <SiTailwindcss className="text-cyan-400"></SiTailwindcss>
                 </span>
-                <div className="absolute -bottom-full left-12 group-hover:bottom-[-2] transition-all duration-500 z-50
-                                md:left-72 md:group-hover:bottom-[-8px]
+                <div className="absolute -bottom-full left-12 group-hover:bottom-[25px] transition-all duration-500 z-50
+                                md:left-72 md:group-hover:bottom-[70px] 
                                 lg:left-40 lg:group-hover:bottom-[70px]">
-                  <a href="https://github.com/Isarok/Apolliculture"
+                  <a href="https://github.com/Isarok/Eco-Ders-2"
                      className="cursor-pointer text-gray-200"                 
                      target="_blank"
                      rel="noreferrer">
-                    <FaGithub
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                      filter:
-                        "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
-                    }} 
-                    className="flex flex-row justify-between mx-36 text-5xl lg:text-6xl"
+                    <FaGithub 
+                        style={{
+                          maxWidth: "100%",
+                          height: "auto",
+                          filter:
+                            "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
+                        }}
+                    className="flex flex-row justify-between mx-36 text-3xl 
+                    md:text-6xl 
+                    lg:text-6xl "
                     />
                   </a>
                 </div>
@@ -267,21 +273,23 @@ const Project = () => {
                   <FaNodeJs className="text-green-400" />
                   <SiAxios className="text-purple-500" />
                 </span>
-                <div className="absolute -bottom-full left-12 group-hover:bottom-[-2] transition-all duration-500 z-50
-                                md:left-72 md:group-hover:bottom-[-8px]
+                <div className="absolute -bottom-full left-12 group-hover:bottom-[25px] transition-all duration-500 z-50
+                                md:left-72 md:group-hover:bottom-[70px] 
                                 lg:left-40 lg:group-hover:bottom-[70px]">
-                  <a href="https://github.com/Isarok/EmpleateConTalentoFront"
+                  <a href="https://github.com/Isarok/Eco-Ders-2"
                      className="cursor-pointer text-gray-200"                 
                      target="_blank"
                      rel="noreferrer">
-                    <FaGithub
-                    style={{
-                      maxWidth: "100%",
-                      height: "auto",
-                      filter:
-                        "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
-                    }} 
-                    className="flex flex-row justify-between mx-36 text-5xl  lg:text-6xl"
+                    <FaGithub 
+                        style={{
+                          maxWidth: "100%",
+                          height: "auto",
+                          filter:
+                            "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
+                        }}
+                    className="flex flex-row justify-between mx-36 text-3xl 
+                    md:text-6xl 
+                    lg:text-6xl "
                     />
                   </a>
                 </div>
