@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import { sendEmail } from '../utils/emailService'; // Asegúrate de que la ruta sea correcta
+import { toast, ToastContainer, Zoom } from 'react-toastify';
 
 const Contact = () => {
   const form = useRef();
@@ -11,6 +12,17 @@ const Contact = () => {
     sendEmail(form);
   };
 
+  const notify = () => {
+    toast("Email enviado 🚀, gracias por contactar conmigo!", {
+      position: "top-center",
+      className: "text-[15px] md:text-[20px] lg:text-[30px] xl:text-[30px] 2xl text-cyan-400  text-left text-black",
+      theme: "dark",
+      transition:Zoom,
+      
+
+      
+    });
+  };
   return (
     <section
       className="py-[20vh] md:py-[30vh] lg:py-[40vh] xl:min-h-[60vh] 2xl:min-h-[90vh] flex items-center justify-center"
@@ -65,9 +77,13 @@ const Contact = () => {
                 placeholder="Escribe tu mensaje..."
               ></textarea>
 
-              <button className="btn btn-lg rounded-md text-black bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent">
+              <button 
+              className="btn btn-lg rounded-md text-black bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent"
+              onClick={notify}>
                 Enviar
               </button>
+
+              <ToastContainer />
             </form>
           </motion.div>
         </div>

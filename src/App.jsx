@@ -1,4 +1,6 @@
-import "./index.css";
+import React from 'react';
+import { ToastContainer } from 'react-toastify';
+
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
@@ -8,15 +10,17 @@ import Project from "./components/Project";
 
 function App() {
   return (
-    <div className=" bg-no-repeat bg-cover overflow-hidden text-white bg-black/90 mix-blend-800">
+    <div className="bg-no-repeat bg-cover overflow-hidden text-white bg-black/90 mix-blend-800">
       <Header />
       <Navbar />
       <Main />
       <About />
       <Project />
       <Contact />
+      <ToastContainer /> 
     </div>
   );
 }
 
 export default App;
+
