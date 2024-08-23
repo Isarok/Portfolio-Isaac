@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
-import { sendEmail } from '../utils/emailService'; // Asegúrate de que la ruta sea correcta
+import { sendEmail } from '../utils/emailService';
 import { toast, ToastContainer, Zoom } from 'react-toastify';
 
 const Contact = () => {
@@ -9,20 +9,44 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    sendEmail(form);
+
+    // Validar campos
+    const name = form.current['user_name'].value.trim();
+    const email = form.current['user_email'].value.trim();
+    const message = form.current['message'].value.trim();
+
+    if (!name || !email) {
+      toast.error("Por favor, complete todos los campos obligatorios.", {
+        position: "top-center",
+        className: "text-[15px] md:text-[20px] lg:text-[30px] xl:text-[30px] text-cyan-400 text-left",
+        theme: "dark",
+        transition: Zoom,
+      });
+      return;
+    }
+
+    // Enviar el email
+    sendEmail(form)
+      .then(() => {
+        toast("Email enviado 🚀, gracias por contactar conmigo!", {
+          position: "top-center",
+          className: "text-[15px] md:text-[20px] lg:text-[30px] xl:text-[30px] text-cyan-400 text-left",
+          theme: "dark",
+          transition: Zoom,
+        });
+        form.current.reset(); // Resetea el formulario después de enviar
+      })
+      .catch((error) => {
+        toast.error("Error al enviar el email. Inténtalo de nuevo más tarde.", {
+          position: "top-center",
+          className: "text-[15px] md:text-[20px] lg:text-[30px] xl:text-[30px] text-cyan-400 text-left",
+          theme: "dark",
+          transition: Zoom,
+        });
+        console.error('Error sending email:', error);
+      });
   };
 
-  const notify = () => {
-    toast("Email enviado 🚀, gracias por contactar conmigo!", {
-      position: "top-center",
-      className: "text-[15px] md:text-[20px] lg:text-[30px] xl:text-[30px] 2xl text-cyan-400  text-left text-black",
-      theme: "dark",
-      transition:Zoom,
-      
-
-      
-    });
-  };
   return (
     <section
       className="py-[20vh] md:py-[30vh] lg:py-[40vh] xl:min-h-[60vh] 2xl:min-h-[90vh] flex items-center justify-center"
@@ -52,34 +76,37 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:mt-0 mt-8 border rounded-2xl flex flex-col gap-y-4 pb-20 p-6 items-start "
+            className="flex-1 lg:mt-0 mt-8 border rounded-2xl flex flex-col gap-y-4 pb-20 p-6 items-start"
           >
             <form ref={form} onSubmit={handleSubmit}>
+              <label htmlFor="name">Nombre completo <span className="text-cyan-500">*</span></label>
               <input
                 type="text"
                 name="user_name"
                 className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-cyan-400 transition-all duration-300"
-                placeholder="Nombre"
+                required
               />
 
+              <label htmlFor="email">Email <span className="text-cyan-500">*</span></label>
               <input
                 type="email"
                 name="user_email"
                 className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-cyan-400 transition-all duration-300"
-                placeholder="Email"
+                required
               />
 
+              <label htmlFor="message">Su mensaje </label>
               <textarea
                 name="message"
                 cols="30"
                 rows="2"
                 className="bg-transparent border-b py-2 outline-none w-full placeholder:text-white focus:border-cyan-400 transition-all duration-300 resize-none"
-                placeholder="Escribe tu mensaje..."
               ></textarea>
 
-              <button 
-              className="btn btn-lg rounded-md text-black bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent"
-              onClick={notify}>
+              <button
+                type="submit"
+                className="btn btn-lg rounded-md text-black bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent"
+              >
                 Enviar
               </button>
 
