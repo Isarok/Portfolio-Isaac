@@ -6,15 +6,15 @@ import img from "../img/EscalandoB.png";
 
 const AboutMe = () => {
   return (
-    <section className="section py-[10vh] md:py-[20vh] lg:py-[30vh] xl:min-h-[60vh] 2xl:min-h-[90vh]" id="aboutMe">
+    <section className=" py-[10vh] md:py-[20vh] lg:max-w-[1200px] lg:mx-auto lg:py-[28vh] xl:min-h-[60vh] 2xl:min-h-[100vh]" id="aboutMe">
       <div className="container mx-auto ">
-        <div className="flex flex-col justify-center items-center lg:flex-row lg:items-center gap-y-10 lg:gap-y-0 lg:gap-x-32 2xl:gap-x-96">
+        <div className="flex flex-col justify-center items-center lg:flex-row lg:items-center gap-y-10 lg:gap-y-0 lg:gap-x-32 2xl:gap-x-48 ">
           <div className="flex-1 text-center font-secondary md:text-right lg:text-left">
             <motion.div
               variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              className="btn rounded-full flex-1 max-w-[480px] lg:max-w-[480px] 2xl:max-w-[800px]"
+              className="btn rounded-full flex-1 max-w-[480px] lg:max-w-[480px] 2xl:max-w-[800px] "
             >
               <img
                 src={img}

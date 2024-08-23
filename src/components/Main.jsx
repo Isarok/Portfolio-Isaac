@@ -7,10 +7,10 @@ import img from "../img/IsarockDev.png";
 const Main = () => {
   return (
     <section
-      className="section py-[20vh] md:py-[30vh] lg:py-[20vh] xl:min-h-[60vh] 2xl:min-h-[90vh] "
+      className="section py-[20vh] md:py-[30vh] lg:py-[26vh] xl:min-h-[60vh] 2xl:min-h-[100vh] "
       id="home"
     >
-      <div className="container mx-auto max-w-[1800px] lg:max-w-[1300px] 2xl:max-w-[1800px]">
+      <div className="container mx-auto max-w-[1800px] lg:max-w-[1200px] 2xl:max-w-[1800px]">
         <div className="flex flex-col md:flex-row lg:flex-row lg:items-center gap-y-10 lg:gap-y-20 lg:gap-x-20">
           <div className="flex-1 font-secondary md:text-left lg:text-left ">
             <motion.div
@@ -63,7 +63,7 @@ const Main = () => {
                     2xl:text-2xl "
                   >
                     <a
-                      href="https://mail.google.com/mail/?view=cm&fs=1&to=isaac.lucerito@gmail.com"
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=isaacfstack@gmail.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-50"

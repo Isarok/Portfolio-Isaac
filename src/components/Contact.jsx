@@ -25,7 +25,7 @@ const Contact = () => {
   };
   return (
     <section
-      className="py-[20vh] md:py-[30vh] lg:py-[40vh] xl:min-h-[60vh] 2xl:min-h-[90vh] flex items-center justify-center"
+      className="max-w-[1200px]  mx-auto py-[20vh] md:py-[30vh] lg:py-[30vh] xl:min-h-[60vh] 2xl:min-h-[100vh] flex items-center justify-center"
       id="contact"
     >
       <div className="container mx-auto">
@@ -37,7 +37,7 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 flex justify-start items-center"
           >
-            <div>
+            <div className='md:pl-6'>
               <h4 className="text-xl uppercase text-cyan-400 font-medium mb-6 tracking-wide">
                 Contacto
               </h4>

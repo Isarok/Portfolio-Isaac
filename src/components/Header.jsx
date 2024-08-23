@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
   const nombre = (
-    <div className=" py-[20vh] xl:min-h-[80vh] flex justify-center items-center h-screen">
+    <div className=" max-w-1200px py-[20vh] xl:min-h-[80vh] flex justify-center items-center h-screen">
       <span className="Center text-[15px] md:text-[20px] lg:text-[30px] xl:text-[30px] 2xl:text-5xl text-center text-cyan-400">
         <TypeAnimation
           sequence={[

@@ -21,7 +21,7 @@ import { FaGitAlt, FaGithub, FaReact } from "react-icons/fa6";
 const Project = () => {
   return (
     <section
-      className="section  py-[10vh] md:py-[0vh] lg:py-[20vh]  xl:min-h-[60vh] 2xl:min-h-[90vh]"
+      className="max-w-[1200px] mx-auto py-[10vh] md:py-[0vh] lg:py-[28vh] xl:min-h-[60vh] 2xl:min-h-[100vh]"
       id="projects"
     >
       <div className="container mx-auto">
@@ -31,11 +31,15 @@ const Project = () => {
           whileInView={"show"}
           className="flex-1 2xl:max-w-[100%] lg:mx-0"
         >
-          <div>
-            <h2 className="h2 xl:max-w-[100%] xl:container leading-tight font-semibold 2xl:text-2xl text-xl text-cyan-400  ">
+          <div className="xl:m-8 2xl:m-9 ">
+            <h2 className="text-xl text-cyan-400 leading-tight font-semibold 
+            xl:max-w-[100%] xl:container 
+            2xl:text-2xl">
               Estos son los ultimos proyectos en los que colaboré en equipo como propios.
             </h2>
-            <p className="max-w-[100%] xl:container mb-4 2xl:text-xl ">
+            <p className="max-w-[100%] mb-4 
+                         xl:container 
+                         2xl:text-xl ">
               Puedes verlos acontinuación. Usamos metodologia scrum, control de
               versiones GitHub y Git Bash para llevarlos a cabo. Despliegue en
               githubpages, vercel y netlify.
