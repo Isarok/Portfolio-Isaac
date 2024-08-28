@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 const Header = () => {
   const nombre = (
     <div className=" max-w-1200px py-[20vh] xl:min-h-[80vh] flex justify-center items-center h-screen">
-      <span className="Center text-[15px] md:text-[20px] lg:text-[30px] xl:text-[30px] 2xl:text-5xl text-center text-cyan-400">
+      <span className="Center text-[15px] md:text-[20px] lg:text-[30px] xl:text-[30px] 2xl:text-[35px] text-center text-cyan-400">
         <TypeAnimation
           sequence={[
             "Cada experto en algún momento fue un principiante. - Helen Hayes",
@@ -19,7 +19,7 @@ const Header = () => {
             "No se trata de rehacerse, sino de deshacerse de lo que ya no te hace bien.- Oprah Winfrey",
           ]}
           speed={0.1}
-          className="text-cyan-400"
+          className="text-cyan-300 "
           wrapper="span"
           repeat={Infinity}
         />
