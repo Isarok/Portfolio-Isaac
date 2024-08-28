@@ -135,7 +135,7 @@ const Main = () => {
             className="flex-1 max-w-[220px] xl:max-w-[280px] 2xl:max-w-[460px] lg:mx-0
             md:max-w-[280px] md:flex-row md: "
           >
-            <div className="">
+           
               <img
                 src={img}
                 alt="Yo sonriendo a la cámara"
@@ -143,11 +143,11 @@ const Main = () => {
                   maxWidth: "100%",
                   height: "auto",
                   filter:
-                    "drop-shadow(0px 4.42184px 37.23px rgba(79, 209, 197, 1))",
+                  "drop-shadow(0px 4.42184px 39.23px rgba(89, 219, 297, 1))",
                 }}
                 
               />
-            </div>
+            
           </motion.div>
         </div>
       </div>

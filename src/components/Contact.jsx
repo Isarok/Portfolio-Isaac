@@ -76,7 +76,7 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:mt-0 mt-8 border rounded-2xl flex flex-col gap-y-4 pb-20 p-6 items-start"
+            className="flex-1 lg:mt-0 mt-8 border rounded-2xl flex flex-col gap-y-4 pb-20 p-6 items-start "
           >
             <form ref={form} onSubmit={handleSubmit}>
               <label htmlFor="name">Nombre completo <span className="text-cyan-500">*</span></label>
@@ -105,7 +105,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="btn btn-lg rounded-md text-black bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent"
+                className=" w-full rounded-md text-black bg-[#12eff7] px-6 py-3 mt-4 transition-colors hover:text-[#12eff7] hover:bg-transparent  "
               >
                 Enviar
               </button>

@@ -14,7 +14,7 @@ const AboutMe = () => {
               variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              className="btn rounded-full flex-1 max-w-[480px] lg:max-w-[480px] 2xl:max-w-[800px] "
+              className=" flex-1 max-w-[480px] lg:max-w-[480px] 2xl:max-w-[800px] "
             >
               <img
                 src={img}
@@ -23,7 +23,7 @@ const AboutMe = () => {
                   maxWidth: "100%",
                   height: "auto",
                   filter:
-                    "drop-shadow(0px 4.42184px 37.23px rgba(79, 209, 197, 1))",
+                  "drop-shadow(0px 4.42184px 35.23px rgba(89, 219, 297, 1))",
                 }}
                 className="max-w-[220px] lg:max-w-[280px] "
               />
