@@ -30,7 +30,7 @@ const Contact = () => {
       .then(() => {
         toast("Email enviado 🚀, gracias por contactar conmigo!", {
           position: "top-center",
-          className: "text-[15px] md:text-[20px] lg:text-[30px] xl:text-[30px] text-cyan-400 text-left",
+          className: "text-[15px] md:text-[20px] lg:text-[30px] xl:text-[30px] text-white text-left",
           theme: "dark",
           transition: Zoom,
         });
