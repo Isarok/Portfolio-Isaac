@@ -49,7 +49,7 @@ const Contact = () => {
 
   return (
     <section
-      className="max-w-[1200px]  mx-auto py-[20vh] md:py-[30vh] lg:py-[30vh] xl:min-h-[60vh] 2xl:min-h-[100vh] flex items-center justify-center"
+      className="max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px]  mx-auto py-[20vh] md:py-[30vh] lg:py-[30vh] xl:min-h-[60vh] 2xl:min-h-[100vh] flex items-center justify-center"
       id="contact"
     >
       <div className="container mx-auto">
@@ -62,10 +62,10 @@ const Contact = () => {
             className="flex-1 flex justify-start items-center"
           >
             <div className='md:pl-6'>
-              <h4 className="text-xl uppercase text-cyan-400 font-medium mb-6 tracking-wide">
+              <h4 className="text-lg md:text-xl lg:text-3xl uppercase text-cyan-400 font-medium mb-6 tracking-wide">
                 Contacto
               </h4>
-              <h2 className="text-2xl 2xl:text-6xl leading-none font-semibold">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl leading-none font-semibold">
                 Trabajemos juntos
               </h2>
             </div>

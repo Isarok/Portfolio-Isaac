@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
 import { PiReadCvLogo } from "react-icons/pi";
-import img from "../img/IsarockDev.png";
+import img from "../img/PruebaImg.png";
 
 const Main = () => {
   return (
@@ -10,7 +10,7 @@ const Main = () => {
       className="section py-[20vh] md:py-[30vh] lg:py-[26vh] xl:min-h-[60vh] 2xl:min-h-[100vh] "
       id="home"
     >
-      <div className="container mx-auto lg:max-w-[1200px] 2xl:max-w-[1200px]">
+      <div className="container mx-auto lg:max-w-[1000px] 2xl:max-w-[1200px] ">
         <div className="flex flex-col md:flex-row lg:flex-row lg:items-center gap-y-10 lg:gap-y-20 lg:gap-x-20">
           <div className="flex-1 font-secondary md:text-left lg:text-left ">
             <motion.div
@@ -18,7 +18,7 @@ const Main = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 text-[26px] lg:text-[40px] 2xl:text-[60px]  uppercase leading-[1] font-semibold"
+              className="mb-4 text-[26px] lg:text-[35px] 2xl:text-[60px]  uppercase leading-[1] font-semibold"
             >
               <span className="mr-2">Soy</span>
               <span className="text-cyan-400">Isaac Garcia Romero.</span>
@@ -31,7 +31,7 @@ const Main = () => {
               viewport={{ once: false, amount: 0.5 }}
               className="mb-6 max-w-lg
               md:mb-8
-              lg:mb-12 lg:max-w-3xl
+              lg:mb-12 lg:max-w-xl
               sm:max-w-sm 
               2xl:mx-0 2xl:max-w-3xl 2xl:text-xl 2xl:max-w-[1200px] "
             >
@@ -50,7 +50,7 @@ const Main = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex flex-col mx-auto items-center gap-y-4
                          md:gap-8 md:flex md:flex-row md:justify-start
-                         lg:gap-20 lg:justify-start  
+                         lg:gap-20   
                          2xl:mb-0 2xl:mx-0 "
                         
                       
@@ -74,10 +74,7 @@ const Main = () => {
                 </span>
               <div
                 className="flex justify-around m-4 md:m-0 gap-x-10 gap-y-4
-                          sm:gap-x-16 
-                          md:gap-x-12
-                          lg:flex-row  lg:gap-x-20
-                          2xl:gap-x-20"
+                          "
               >
 
                 <a
@@ -118,22 +115,14 @@ const Main = () => {
                 </a> */}
               </div>
             </motion.div>
-
-            <motion.div
-              variants={fadeIn("up", 0.9)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className=" text-cyan-400 flex items-center gap-x-8 max-w-max lg:mx:mx-0 mx-auto"
-            ></motion.div>
           </div>
 
           <motion.div
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             whileInView={"show"}
-            className="flex-1 max-w-[220px] xl:max-w-[280px] 2xl:max-w-[460px] lg:mx-0
-            md:max-w-[280px] md:flex-row md: "
+            className="flex-1 max-w-[220px] lg:max-w-[280px] xl:max-w-[280px] 2xl:max-w-[460px] lg:mx-0
+            md:max-w-[280px] md:flex-row "
           >
            
               <img

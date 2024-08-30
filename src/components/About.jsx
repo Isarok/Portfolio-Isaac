@@ -6,7 +6,7 @@ import img from "../img/EscalandoB.png";
 
 const AboutMe = () => {
   return (
-    <section className=" py-[10vh] md:py-[20vh] lg:max-w-[1200px] lg:mx-auto lg:py-[28vh] xl:min-h-[60vh] 2xl:min-h-[100vh]" id="aboutMe">
+    <section className=" py-[10vh] md:py-[20vh] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px] lg:mx-auto lg:py-[28vh] xl:min-h-[60vh] 2xl:min-h-[100vh]" id="aboutMe">
       <div className="container mx-auto ">
         <div className="flex flex-col justify-center items-center lg:flex-row lg:items-center gap-y-10 lg:gap-y-0 lg:gap-x-32 2xl:gap-x-48 ">
           <div className="flex-1 text-center font-secondary md:text-right lg:text-left">
@@ -14,7 +14,8 @@ const AboutMe = () => {
               variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              className=" flex-1 max-w-[480px] lg:max-w-[480px] 2xl:max-w-[800px] "
+              className=" max-w-[220px] lg:max-w-[380px] xl:max-w-[380px] 2xl:max-w-[460px] lg:mx-0
+              md:max-w-[580px] md:flex-row "
             >
               <img
                 src={img}
@@ -25,7 +26,7 @@ const AboutMe = () => {
                   filter:
                   "drop-shadow(0px 4.42184px 35.23px rgba(89, 219, 297, 1))",
                 }}
-                className="max-w-[220px] lg:max-w-[280px] "
+                
               />
             </motion.div>
           </div>
@@ -49,7 +50,8 @@ const AboutMe = () => {
             </h3>
 
             <Link to="projects">
-              <button className="rounded-md text-black bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent">
+              <button className="rounded-md text-black bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] hover:bg-transparent 
+              ">
                 Curiosea mis proyectos
               </button>
             </Link>
