@@ -21,7 +21,7 @@ import { FaGitAlt, FaGithub, FaReact } from "react-icons/fa6";
 const Project = () => {
   return (
     <section
-      className="max-w-[1200px] mx-auto py-[10vh] md:py-[0vh] lg:py-[28vh] xl:min-h-[60vh] 2xl:min-h-[100vh]"
+      className="max-w-[1000px] mx-auto py-[10vh] md:py-[0vh] lg:py-[28vh] xl:min-h-[60vh] 2xl:min-h-[100vh]"
       id="projects"
     >
       <div className="container mx-auto">
@@ -33,12 +33,12 @@ const Project = () => {
         >
           <div className="xl:m-8 2xl:m-9 ">
             <h2 className="text-xl text-cyan-400 leading-tight font-semibold 
-            xl:max-w-[100%] xl:container 
+            xl:max-w-[1000px] xl:container 
             2xl:text-2xl">
               Estos son los ultimos proyectos en los que colaboré en equipo como propios.
             </h2>
             <p className="max-w-[100%] mb-4 
-                         xl:container 
+                         
                          2xl:text-xl ">
               Puedes verlos acontinuación. Usamos metodologia scrum, control de
               versiones GitHub y Git Bash para llevarlos a cabo. Despliegue en
@@ -60,7 +60,7 @@ const Project = () => {
           </div>
         </motion.div>
 
-        <div className="flex lg:flex-row flex-col gap-x-0 xl:container -mx-16 lg:mx-auto">
+        <div className="flex flex-col -mx-16 lg:mx-auto lg:flex-row ">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -83,23 +83,24 @@ const Project = () => {
 
               <div className="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50
                               md:group-hover:bottom-32 md:left-12
-                              lg:left-12">
-                <span className="text-cyan-400 md:text-3xl lg:text-3xl sm:text-sm text-1xl  ">
+                              lg:left-4 lg:group-hover:bottom-20">
+                <span className="text-cyan-400 md:text-3xl lg:text-2xl sm:text-sm   ">
                   Frontend
                 </span>
               </div>
 
               <div className="absolute -bottom-full left-4 group-hover:bottom-16 transition-all duration-500 z-50 
-                              md:left-12 md:gap-4 md:group-hover:bottom-12">
+                              md:left-12 md:gap-4 md:group-hover:bottom-12  lg:left-4">
                 <span className="flex flex-row gap-2 text-white 
                                 md:text-[40px] 
-                                lg:text-1xl text-1xl ">
+                                lg:text-xl 
+                                text-xl ">
                   <FaHtml5 className="text-red-500" />
                   <FaCss3Alt className="text-blue-500" />   
                 </span >
-                <div className="absolute -bottom-full left-12 group-hover:bottom-[25px] transition-all duration-500 z-50
+                <div className="absolute -bottom-full left-4 group-hover:bottom-[25px] transition-all duration-500 z-50
                                 md:left-72 md:group-hover:bottom-[70px] 
-                                lg:left-40 lg:group-hover:bottom-[70px]">
+                                lg:left-10 lg:group-hover:bottom-[60px]">
                   <a href="https://github.com/Isarok/Eco-Ders-2"
                      className="cursor-pointer text-gray-200"                 
                      target="_blank"
