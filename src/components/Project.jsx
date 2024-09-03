@@ -16,12 +16,13 @@ import {
   SiExpress,
   SiPrisma,
 } from "react-icons/si";
-import { FaGitAlt, FaGithub, FaReact } from "react-icons/fa6";
+import { FaGithub, FaReact } from "react-icons/fa6";
+import { GiWireframeGlobe } from "react-icons/gi";
 
 const Project = () => {
   return (
     <section
-      className="max-w-[1000px] mx-auto py-[10vh] md:py-[0vh] lg:py-[28vh] xl:min-h-[60vh] 2xl:min-h-[100vh]"
+      className="max-w-[1000px]  lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px] mx-auto py-[10vh] relative items-center text-gray-300 rounded-lg md:py-[0vh] lg:py-[28vh] xl:min-h-[60vh] 2xl:min-h-[100vh]"
       id="projects"
     >
       <div className="container mx-auto">
@@ -31,7 +32,7 @@ const Project = () => {
           whileInView={"show"}
           className="flex-1 2xl:max-w-[100%] lg:mx-0"
         >
-          <div className="xl:m-8 2xl:m-9 ">
+          <div className="xl:m-8 2xl:m-8 ">
             <h2 className="text-xl text-cyan-400 leading-tight font-semibold 
             xl:max-w-[1000px] xl:container 
             2xl:text-2xl">
@@ -44,19 +45,6 @@ const Project = () => {
               versiones GitHub y Git Bash para llevarlos a cabo. Despliegue en
               githubpages, vercel y netlify.
             </p>
-           {/*  <span className="text-3xl justify-center flex flex-row gap-2">
-              <FaHtml5 />
-              <FaCss3Alt />
-              <SiJavascript />
-              <SiTypescript />
-              <SiTailwindcss />
-              <FaReact />
-              <FaGitAlt />
-              <FaGithub />
-              <SiNpm />
-              <FaNodeJs />
-              <SiMysql />
-            </span> */}
           </div>
         </motion.div>
 
@@ -66,7 +54,7 @@ const Project = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-12 m-10 xl:mb-0 "
+            className="flex-1 flex flex-col gap-y-4 m-10 xl:mb-0 "
           >
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <a
@@ -83,43 +71,49 @@ const Project = () => {
 
               <div className="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50
                               md:group-hover:bottom-32 md:left-12
-                              lg:left-4 lg:group-hover:bottom-20">
-                <span className="text-cyan-400 md:text-3xl lg:text-2xl sm:text-sm   ">
-                  Frontend
+                              lg:left-4 lg:group-hover:bottom-16">
+                <span className="text-cyan-400 md:text-4xl lg:text-2xl sm:text-sm   ">
+                  Tecnologías:
                 </span>
               </div>
 
               <div className="absolute -bottom-full left-4 group-hover:bottom-16 transition-all duration-500 z-50 
-                              md:left-12 md:gap-4 md:group-hover:bottom-12  lg:left-4">
+                              md:left-12 md:gap-4 md:group-hover:bottom-12 
+                              lg:group-hover:bottom-4 lg:left-4">
                 <span className="flex flex-row gap-2 text-white 
-                                md:text-[40px] 
-                                lg:text-xl 
-                                text-xl ">
+                                 md:text-5xl 
+                                 lg:text-3xl 
+                                 text-xl ">
                   <FaHtml5 className="text-red-500" />
                   <FaCss3Alt className="text-blue-500" />   
                 </span >
-                <div className="absolute -bottom-full left-4 group-hover:bottom-[25px] transition-all duration-500 z-50
-                                md:left-72 md:group-hover:bottom-[70px] 
-                                lg:left-10 lg:group-hover:bottom-[60px]">
-                  <a href="https://github.com/Isarok/Eco-Ders-2"
-                     className="cursor-pointer text-gray-200"                 
-                     target="_blank"
-                     rel="noreferrer">
-                    <FaGithub 
-                        style={{
-                          maxWidth: "100%",
-                          height: "auto",
-                          filter:
-                            "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
-                        }}
-                    className="flex flex-row justify-between mx-36 text-3xl 
-                    md:text-6xl 
-                    lg:text-6xl "
-                    />
-                  </a>
-                </div>
+                
               </div>
             </div>
+
+            <article className="flex flex-col gap-y-6 text-gray-300">ECO-DERS es la landing page de una consultoría tecnológica, desarrollada como uno de nuestros primeros proyectos en equipo .     
+            <ul className="flex flex-wrap gap-2 ">
+              <li>              
+                <a href="https://github.com/Isarok/Eco-Ders-2"
+                     className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
+                     target="_blank"
+                     rel="noreferrer">
+                    <FaGithub className="flex flex-row text-2xl w-5 h-5 mr-1"/>
+                     Código   
+                 </a>
+              </li>
+              <li >
+                 
+                   <a href="href=https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/"
+                        className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border  border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
+                        target="_blank"
+                        rel="noreferrer">
+                        <GiWireframeGlobe className="flex flex-row text-2xl w-5 h-5 mr-1"/>
+                         Demo                   
+                   </a>
+               </li>
+            </ul>
+            </article>
 
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 z-40 w-full h-full absolute transition-all duration-300 cursor-pointer"></div>
@@ -130,19 +124,20 @@ const Project = () => {
               />
 
               <div className="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50
-              md:group-hover:bottom-32 md:left-12">
-                <span className="text-cyan-400 md:text-3xl lg:text-3xl sm:text-sm text-1xl  ">
-                  Frontend & Backend
+              md:group-hover:bottom-32 md:left-12
+              lg:left-4 lg:group-hover:bottom-16">
+                <span className="text-cyan-400 md:text-4xl lg:text-2xl sm:text-sm">
+                  Tecnologías:
                 </span>
               </div>
 
-              <div className="absolute -bottom-full left-4 flex justify-center group-hover:bottom-16 transition-all duration-500 z-50
-              md:left-12 md:gap-4 md:group-hover:bottom-12">
+              <div className="absolute -bottom-full left-4 group-hover:bottom-16 transition-all duration-500 z-50
+                              md:left-12 md:gap-4 md:group-hover:bottom-12
+                              lg:group-hover:bottom-4 lg:left-4">
                 <span className="flex flex-row gap-2 text-white 
-                md:text-[40px] 
-                lg:text-1xl text-1xl">
-                  {/* <FaHtml5 className="text-red-400" />
-                  <FaCss3Alt className="text-blue-400" /> */}
+                                 md:text-[40px] 
+                                 lg:text-3xl 
+                                 text-xl">
                   <SiTypescript className="text-blue-700" />
                   <FaReact className="text-cyan-400" />
                   <SiVite className="text-purple-800" />
@@ -152,28 +147,33 @@ const Project = () => {
                   <SiExpress className="text-gray-400" />
                   <SiPrisma className="text-white-400" />
                 </span>
-                <div className="absolute -bottom-full left-12 group-hover:bottom-[25px] transition-all duration-500 z-50
-                                md:left-72 md:group-hover:bottom-[70px] 
-                                lg:left-40 lg:group-hover:bottom-[70px]">
-                  <a href="https://github.com/Isarok/Eco-Ders-2"
-                     className="cursor-pointer text-gray-200"                 
-                     target="_blank"
-                     rel="noreferrer">
-                    <FaGithub 
-                        style={{
-                          maxWidth: "100%",
-                          height: "auto",
-                          filter:
-                            "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
-                        }}
-                    className="flex flex-row justify-between mx-36 text-3xl 
-                    md:text-6xl 
-                    lg:text-6xl "
-                    />
-                  </a>
-                </div>
               </div>
             </div>
+            <article className="flex flex-col gap-y-6 text-gray-300">Apolliculture es un marketplace de mieles desarrollado con TypeScript, que integra tanto frontend como backend. 
+            
+            <ul className="flex flex-wrap gap-2 ">
+              <li>              
+                <a href=""
+                     className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
+                     target="_blank"
+                     rel="noreferrer">
+                    <FaGithub className="flex flex-row text-2xl w-5 h-5 mr-1"/>
+                     Código   
+                 </a>
+                
+              </li>
+              <li >
+                 
+                   <a href="https://github.com/DenisseNavarro/Apolliculture"
+                        className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border  border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
+                        target="_blank"
+                        rel="noreferrer">
+                        <GiWireframeGlobe className="flex flex-row text-2xl w-5 h-5 mr-1" />
+                         Demo                   
+                   </a>
+               </li>
+            </ul>
+            </article>
           </motion.div>
 
           <motion.div
@@ -181,7 +181,7 @@ const Project = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-12 m-10 "
+            className="flex-1 flex flex-col gap-y-4 m-10 "
           >
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 z-40 w-full h-full absolute transition-all duration-300 cursor-pointer"></div>
@@ -201,52 +201,60 @@ const Project = () => {
 
               <div className="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50
                               md:group-hover:bottom-32 md:left-12
-                              lg:left-12">
-                <span className="text-cyan-400 md:text-3xl lg:text-3xl sm:text-sm text-1xl">
-                  Frontend 
+                              lg:left-4 lg:group-hover:bottom-16">
+                <span className="text-cyan-400 md:text-4xl lg:text-2xl sm:text-sm">
+                  Tecnologías:
                 </span>
               </div>
 
-              <div className="absolute -bottom-full left-4 group-hover:bottom-16 transition-all duration-500 z-50
-                              md:left-12 md:gap-4 md:group-hover:bottom-12">
+              <div className="absolute -bottom-full left-4 group-hover:bottom-16 transition-all duration-500 z-50 
+                              md:left-12 md:gap-4 md:group-hover:bottom-12 
+                              lg:group-hover:bottom-4 lg:left-4">
                 <span className="flex flex-row gap-2 text-white 
                                  md:text-[40px] 
-                                 lg:text-1xl text-1xl ">
+                                 lg:text-3xl 
+                                 text-xl ">
                   <FaHtml5 className="text-red-400" />
                   <FaCss3Alt className="text-blue-400" />
                   <SiJavascript className="text-yellow-400" />
                   <FaReact className="text-cyan-400" />
                   <SiTailwindcss className="text-cyan-400"></SiTailwindcss>
                 </span>
-                <div className="absolute -bottom-full left-12 group-hover:bottom-[25px] transition-all duration-500 z-50
-                                md:left-72 md:group-hover:bottom-[70px] 
-                                lg:left-40 lg:group-hover:bottom-[70px]">
-                  <a href="https://github.com/Isarok/Eco-Ders-2"
-                     className="cursor-pointer text-gray-200"                 
-                     target="_blank"
-                     rel="noreferrer">
-                    <FaGithub 
-                        style={{
-                          maxWidth: "100%",
-                          height: "auto",
-                          filter:
-                            "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
-                        }}
-                    className="flex flex-row justify-between mx-36 text-3xl 
-                    md:text-6xl 
-                    lg:text-6xl "
-                    />
-                  </a>
-                </div>
               </div>
             </div>
+            <article className="flex flex-col gap-y-6 text-gray-300">eCollectic es una plataforma de eCommerce sencilla creada para practicar con React y sus hooks, conectada a una API pública. 
+            
+            <ul className="flex flex-wrap gap-2 ">
+              <li>              
+                <a href="https://github.com/Isarok/Ecollec"
+                     className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
+                     target="_blank"
+                     rel="noreferrer">
+                    <FaGithub className="flex flex-row text-2xl w-5 h-5 mr-1"/>
+                     Código   
+                 </a>
+                
+              </li>
+              <li >
+                 
+                   <a href="https://ecollec-isaacs-projects-b15fcb7e.vercel.app/"
+                        className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border  border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
+                        target="_blank"
+                        rel="noreferrer">
+                        <GiWireframeGlobe className="flex flex-row text-2xl w-5 h-5 mr-1"/>
+                         Demo                   
+                   </a>
+               </li>
+            </ul>
+            </article>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <a
                 className="group-hover:bg-black/70 z-40 w-full h-full absolute transition-all duration-300 cursor-pointer"
                 href="https://empleate-con-talento-front.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
-              ></a>
+              >       
+              </a>
 
               <img
                 src={Empleate}
@@ -256,19 +264,18 @@ const Project = () => {
 
               <div className="absolute -bottom-full left-4 group-hover:bottom-24 transition-all duration-500 z-50
                               md:group-hover:bottom-32 md:left-12
-                              lg:left-12">
-                <span className="text-cyan-400 md:text-3xl lg:text-3xl sm:text-sm text-1xl">
-                  Frontend & Backend
+                              lg:left-4 lg:group-hover:bottom-16">
+                <span className="text-cyan-400 md:text-4xl lg:text-2xl sm:text-sm ">
+                  Tecnologías:
                 </span>
               </div>
-
-              <div className="absolute -bottom-full left-4 group-hover:bottom-16 transition-all duration-500 z-50
-                              md:left-12 md:gap-4 md:group-hover:bottom-12">
+              <div className="absolute -bottom-full left-4 group-hover:bottom-16 transition-all duration-500 z-50 
+                              md:left-12 md:gap-4 md:group-hover:bottom-12 
+                              lg:group-hover:bottom-4 lg:left-4">
                 <span className="flex flex-row gap-2 text-white 
                                  md:text-[40px] 
-                                 lg:text-1xl text-1xl ">
-                  {/* <FaHtml5 className="text-red-400" />
-                  <FaCss3Alt className="text-blue-400" /> */}
+                                 lg:text-3xl 
+                                 text-xl">
                   <SiJavascript className="text-yellow-400" />
                   <SiTypescript className="text-blue-700" />
                   <FaReact className="text-cyan-400" />
@@ -277,29 +284,33 @@ const Project = () => {
                   <SiMysql className="text-orange-400" />
                   <FaNodeJs className="text-green-400" />
                   <SiAxios className="text-purple-500" />
-                </span>
-                <div className="absolute -bottom-full left-12 group-hover:bottom-[25px] transition-all duration-500 z-50
-                                md:left-72 md:group-hover:bottom-[70px] 
-                                lg:left-40 lg:group-hover:bottom-[70px]">
-                  <a href="https://github.com/Isarok/Eco-Ders-2"
-                     className="cursor-pointer text-gray-200"                 
-                     target="_blank"
-                     rel="noreferrer">
-                    <FaGithub 
-                        style={{
-                          maxWidth: "100%",
-                          height: "auto",
-                          filter:
-                            "drop-shadow(0px 4.42184px 4.23px rgba(79, 209, 197, 1))",
-                        }}
-                    className="flex flex-row justify-between mx-36 text-3xl 
-                    md:text-6xl 
-                    lg:text-6xl "
-                    />
-                  </a>
-                </div>
+                </span>    
               </div>
             </div>
+            <article className="flex flex-col gap-y-6 text-gray-300">Desarrollamos este proyecto con un cliente real enfocado en la formación y desarrollo de habilidades para la búsqueda de empleo.
+          
+            <ul className="flex flex-wrap gap-2 ">
+              <li>              
+                <a href="https://github.com/Isarok/EmpleateConTalentoFront"
+                     className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
+                     target="_blank"
+                     rel="noreferrer">
+                    <FaGithub className="flex flex-row text-2xl w-5 h-5 mr-1"/>
+                     Código   
+                 </a>
+                
+              </li>
+              <li >       
+                  <a href="https://empleate-con-talento-front.vercel.app/"
+                      className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border  border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
+                      target="_blank"
+                      rel="noreferrer">
+                      <GiWireframeGlobe className="flex flex-row text-2xl w-5 h-5 mr-1"/>
+                        Demo                   
+                  </a>
+               </li>
+            </ul>
+            </article>
           </motion.div>
         </div>
       </div>

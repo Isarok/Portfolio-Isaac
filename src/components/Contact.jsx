@@ -63,9 +63,9 @@ const Contact = () => {
           >
             <div className='md:pl-6'>
               <h4 className="text-lg md:text-xl lg:text-3xl uppercase text-cyan-400 font-medium mb-6 tracking-wide">
-                Contacto
+                Contacto :
               </h4>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl leading-none font-semibold">
+              <h2 className="text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl leading-none font-semibold">
                 Trabajemos juntos
               </h2>
             </div>
@@ -76,9 +76,9 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:mt-0 mt-8 border rounded-2xl flex flex-col gap-y-4 pb-20 p-6 items-start "
+            className="flex-1 lg:mt-0 mt-8 border rounded-2xl flex flex-col gap-y-4 pb-20 p-6 items-start border-[#12eff7] border-t-4 border-r-4 text-white"
           >
-            <form ref={form} onSubmit={handleSubmit}>
+            <form className="bg-opacity-full w-full " ref={form} onSubmit={handleSubmit}>
               <label htmlFor="name">Nombre completo <span className="text-cyan-500">*</span></label>
               <input
                 type="text"
@@ -105,7 +105,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className=" w-full rounded-md text-black bg-[#12eff7] px-6 py-3 mt-4 transition-colors hover:text-[#12eff7] hover:bg-transparent  "
+                className=" w-full rounded-md text-black bg-[#12eff7] px-6 py-3 mt-4 transition-colors hover:text-[#12eff7] hover:bg-transparent hover:border hover:border-[#12eff7] "
               >
                 Enviar
               </button>
