@@ -18,7 +18,7 @@ const Main = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-4 text-[26px] lg:text-[35px] 2xl:text-[60px]  uppercase leading-[1] font-semibold"
+              className="mb-4 text-[26px] lg:text-[50px] 2xl:text-[60px]  uppercase leading-[1] font-semibold"
             >
               <span className="mr-2">Soy</span>
               <span className="text-cyan-400">Isaac Garcia Romero.</span>
@@ -43,7 +43,7 @@ const Main = () => {
               todas mis habilidades al servicio de cualquier desafio.
             </motion.p>
 
-            <motion.div
+            <motion.article
               variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
@@ -57,26 +57,22 @@ const Main = () => {
             >
               <span className="relative inline-block overflow-hidden my-6 rounded-md p-[2px]">
                   <span className="absolute inset-[-100%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#D6FFFE_0%,#00FFF7_50%,#E2CBFF_100%)]" />
-                  <div
+                   <div
                     className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-gray-950  px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl
                     2xl:text-2xl "
-                  >
-                    <a
-                      href="https://mail.google.com/mail/?view=cm&fs=1&to=isaacfstack@gmail.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-50"
-                    >
+                   >
+                     <a
+                       href="https://mail.google.com/mail/?view=cm&fs=1&to=isaacfstack@gmail.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="text-gray-50"
+                     >
                       <button >Contacto</button>
-                      
-                    </a>
+                     </a>
                   </div>
-                </span>
-              <div
-                className="flex justify-around m-4 md:m-0 gap-x-10 gap-y-4
-                          "
-              >
-
+              </span>
+              <ul className="flex justify-around m-4 md:m-0 gap-x-10 gap-y-4">
+                <li>
                 <a
                   href="https://docs.google.com/document/d/1pF7dyoWNfUFHGvCdg0XtNNPOKMay5a6l/edit?usp=sharing&ouid=105822291999599368082&rtpof=true&sd=true"
                   target="_blank"
@@ -84,7 +80,8 @@ const Main = () => {
                 >
                   <PiReadCvLogo  className="text-4xl 2xl:text-5xl text-cyan-400" />
                 </a>
-                
+                </li>
+                <li>
                 <a
                   href="https://github.com/Isarok"
                   target="_blank"
@@ -92,6 +89,8 @@ const Main = () => {
                 >
                   <FaGithub className="text-4xl 2xl:text-5xl text-cyan-400" />
                 </a>
+                </li>
+                <li>
                 <a
                   href="https://discord.com/channels/@me"
                   target="_blank"
@@ -99,6 +98,8 @@ const Main = () => {
                 >
                   <FaDiscord className="text-4xl 2xl:text-5xl text-cyan-400" />
                 </a>
+                </li>
+                <li>
                 <a
                   href="https://www.linkedin.com/in/isaac-garc%C3%ADa-romero-b73202a6/"
                   target="_blank"
@@ -106,15 +107,9 @@ const Main = () => {
                 >
                   <FaLinkedin className="text-4xl 2xl:text-5xl text-cyan-400" />
                 </a>
-              {/*   <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=isaac.lucerito@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <SiGmail className="text-4xl 2xl:text-7xl text-cyan-400" />
-                </a> */}
-              </div>
-            </motion.div>
+                </li>
+              </ul>
+            </motion.article>
           </div>
 
           <motion.div

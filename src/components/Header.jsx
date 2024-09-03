@@ -1,11 +1,12 @@
 import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
-  const nombre = (
+  const sentences = (
     <div className=" max-w-1200px py-[20vh] xl:min-h-[80vh] flex justify-center items-center h-screen">
-      <span className="Center text-[15px] md:text-[20px] lg:text-[30px] xl:text-[30px] 2xl:text-[35px] text-center text-cyan-400">
+      <h1 className="Center text-[15px] md:text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[30px] text-center text-cyan-400">
         <TypeAnimation
           sequence={[
+            
             "Cada experto en algún momento fue un principiante. - Helen Hayes",
 
             "No importa cuántas veces fracases. Debes seguir intentándolo. Esto es lo que diferencia a los grandes de los mediocres.- Albert Einstein",
@@ -21,19 +22,17 @@ const Header = () => {
           speed={0.1}
           className="text-cyan-300 "
           wrapper="span"
-          repeat={Infinity}
+          repeat={Infinity }
         />
-      </span>
+      </h1>
     </div>
   );
 
   return (
     <div className="py-12">
-      <div className="container mx-auto">
-        <div className="flex h-8 w-full justify-around items-center">
-          <span className="text-xl font-semibold">{nombre}</span>
+        <div className="flex h-8 max-w-1000px justify-around items-center">
+          <p className="text-xl font-semibold">{sentences}</p>
         </div>
-      </div>
     </div>
   );
 };
