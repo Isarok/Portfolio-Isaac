@@ -78,7 +78,7 @@ const Main = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <PiReadCvLogo  className="text-4xl 2xl:text-5xl text-cyan-400" />
+                  <PiReadCvLogo  className="text-4xl 2xl:text-5xl text-cyan-400 hover:scale-x-150 hover:scale-y-150	" />
                 </a>
                 </li>
                 <li>
@@ -87,7 +87,7 @@ const Main = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaGithub className="text-4xl 2xl:text-5xl text-cyan-400" />
+                  <FaGithub className="text-4xl 2xl:text-5xl text-cyan-400 hover:scale-x-150 hover:scale-y-150	" />
                 </a>
                 </li>
                 <li>
@@ -96,7 +96,7 @@ const Main = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaDiscord className="text-4xl 2xl:text-5xl text-cyan-400" />
+                  <FaDiscord className="text-4xl 2xl:text-5xl text-cyan-400 hover:scale-x-150 hover:scale-y-150	" />
                 </a>
                 </li>
                 <li>
@@ -105,7 +105,7 @@ const Main = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaLinkedin className="text-4xl 2xl:text-5xl text-cyan-400" />
+                  <FaLinkedin className="text-4xl 2xl:text-5xl text-cyan-400 hover:scale-x-150 hover:scale-y-150	" />
                 </a>
                 </li>
               </ul>
@@ -129,6 +129,7 @@ const Main = () => {
                   filter:
                   "drop-shadow(0px 4.42184px 39.23px rgba(89, 219, 297, 1))",
                 }}
+                
                 
               />
             
