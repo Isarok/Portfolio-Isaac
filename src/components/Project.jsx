@@ -151,9 +151,9 @@ const Project = () => {
             </div>
             <article className="flex flex-col gap-y-6 text-gray-300">Apolliculture es un marketplace de mieles desarrollado con TypeScript, que integra tanto frontend como backend. 
             
-            <ul className="flex flex-wrap gap-2 ">
-              <li>              
-                <a href=""
+            <ul className="flex flex-wrap gap-2  ">
+              <li >              
+                <a href="https://github.com/DenisseNavarro/Apolliculture"
                      className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
                      target="_blank"
                      rel="noreferrer">
@@ -164,7 +164,7 @@ const Project = () => {
               </li>
               <li >
                  
-                   <a href="https://github.com/DenisseNavarro/Apolliculture"
+                   <a href=""
                         className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border  border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
                         target="_blank"
                         rel="noreferrer">

@@ -76,7 +76,7 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:mt-0 mt-8 border rounded-2xl flex flex-col gap-y-4 pb-20 p-6 items-start border-[#12eff7] border-t-4 border-r-4 text-white"
+            className="flex-1 lg:mt-0 mt-8 border rounded-2xl flex flex-col gap-y-4 pb-20 p-6 items-start border-[#12eff7]  border-t-4 border-r-4 text-white"
           >
             <form className="bg-opacity-full w-full " ref={form} onSubmit={handleSubmit}>
               <label htmlFor="name">Nombre completo <span className="text-cyan-500">*</span></label>
