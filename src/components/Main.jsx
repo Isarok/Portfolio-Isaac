@@ -55,7 +55,7 @@ const Main = () => {
                         
                       
             >
-              <span className="relative inline-block overflow-hidden my-6 rounded-md p-[2px]">
+              <span className="relative inline-block overflow-hidden my-0 rounded-md p-[2px]">
                   <span className="absolute inset-[-100%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#D6FFFE_0%,#00FFF7_50%,#E2CBFF_100%)]" />
                    <div
                     className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-gray-950  px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl
@@ -71,7 +71,7 @@ const Main = () => {
                      </a>
                   </div>
               </span>
-              <ul className="flex justify-around m-4 md:m-0 gap-x-10 gap-y-4">
+              <ul className="flex justify-around m-4 md:m-0 gap-x-10 gap-y-2">
                 <li>
                 <a
                   href="https://docs.google.com/document/d/1pF7dyoWNfUFHGvCdg0XtNNPOKMay5a6l/edit?usp=sharing&ouid=105822291999599368082&rtpof=true&sd=true"
@@ -119,7 +119,6 @@ const Main = () => {
             className="flex-1 max-w-[220px] lg:max-w-[280px] xl:max-w-[280px] 2xl:max-w-[460px] lg:mx-0
             md:max-w-[280px] md:flex-row "
           >
-           
               <img
                 src={img}
                 alt="Yo sonriendo a la cámara"
@@ -129,10 +128,7 @@ const Main = () => {
                   filter:
                   "drop-shadow(0px 4.42184px 39.23px rgba(89, 219, 297, 1))",
                 }}
-                
-                
-              />
-            
+              /> 
           </motion.div>
         </div>
       </div>

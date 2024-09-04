@@ -42,7 +42,7 @@ const Project = () => {
                          
                          2xl:text-xl ">
               Puedes verlos acontinuación. Usamos metodologia scrum, control de
-              versiones GitHub y Git Bash para llevarlos a cabo. Despliegue en
+              versiones Git para llevarlos a cabo. Despliegue en
               githubpages, vercel y netlify.
             </p>
           </div>
