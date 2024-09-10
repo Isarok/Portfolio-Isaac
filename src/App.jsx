@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Project />
       <Contact />
+      <Footer />
       <ToastContainer /> 
     </div>
   );
