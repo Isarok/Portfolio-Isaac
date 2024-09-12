@@ -38,15 +38,13 @@ const AboutMe = () => {
             className="flex-1 mix-blend-lighten lg:mb-0"
           >
             <h2 className="font-primary text-[35px] mb-6 2xl:text-[60px] text-cyan-400 ">
-              ¿Quien soy?
+            ¿Quién soy?
             </h2>
             <h3 className=" max-w-[600px] mb-12 2xl:mb-20 2xl:max-w-[800px] 2xl:text-xl 2xl:text-3xl  ">
-              Después de años explorando las alturas, desafiando límites en la
-              escalada y haciendo tours internacionales con grandes artistas
-              decidí que era hora de explorar nuevos horizontes. Es un giro de
-              180° emocionante y que me entusiasma, estoy preparado para aplicar
-              la misma determinación y pasión que he llevado a lo largo de estos
-              años a este nuevo desafío.
+            Después de años explorando las alturas, 
+            desafiando límites en la escalada y haciendo tours internacionales con grandes artistas, 
+            decidí que era hora de explorar nuevos horizontes. Es un giro de 180° emocionante y que me entusiasma. 
+            Estoy preparado para aplicar la misma determinación y pasión que he llevado a lo largo de estos años a este nuevo desafío.
             </h3>
                 
             <Link to="projects">

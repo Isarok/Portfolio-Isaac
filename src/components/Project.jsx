@@ -36,14 +36,13 @@ const Project = () => {
             <h2 className="text-xl text-cyan-400 leading-tight font-semibold 
             xl:max-w-[1000px] xl:container 
             2xl:text-2xl">
-              Estos son los ultimos proyectos en los que colaboré en equipo como propios.
+              Estos son los últimos proyectos en los que colaboré, tanto en equipo como en solitario.
             </h2>
             <p className="max-w-[100%] mb-4 
-                         
                          2xl:text-xl ">
-              Puedes verlos acontinuación. Usamos metodologia scrum, control de
-              versiones Git para llevarlos a cabo. Despliegue en
-              githubpages, vercel y netlify.
+              Puedes verlos a continuación. Usamos la metodología <span className="text-cyan-300 font-semibold">Scrum</span> y <span className="text-cyan-300  font-semibold">Kanban</span>, 
+              además de control de versiones con Git para llevarlos a cabo. 
+              Los despliegues se realizaron en <span className="text-cyan-300  font-semibold">GitHub Pages, Vercel </span> y <span className="text-cyan-300  font-semibold">Netlify.</span>
             </p>
           </div>
         </motion.div>
@@ -91,7 +90,7 @@ const Project = () => {
               </div>
             </div>
 
-            <article className="flex flex-col gap-y-6 text-gray-300">ECO-DERS es la landing page de una consultoría tecnológica, desarrollada como uno de nuestros primeros proyectos en equipo .     
+            <article className="flex flex-col gap-y-6 text-gray-300"> ECO-DERS es la landing page de una consultoría tecnológica, desarrollada como uno de nuestros primeros proyectos en equipo.     
             <ul className="flex flex-wrap gap-2 ">
               <li>              
                 <a href="https://github.com/Isarok/Eco-Ders-2"
@@ -164,13 +163,13 @@ const Project = () => {
               </li>
               <li >
                  
-                   <a href=""
+                   {/* <a href=""
                         className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border  border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
                         target="_blank"
                         rel="noreferrer">
                         <GiWireframeGlobe className="flex flex-row text-2xl w-5 h-5 mr-1" />
                          Demo                   
-                   </a>
+                   </a> */}
                </li>
             </ul>
             </article>
@@ -222,7 +221,7 @@ const Project = () => {
                 </span>
               </div>
             </div>
-            <article className="flex flex-col gap-y-6 text-gray-300">eCollectic es una plataforma de eCommerce sencilla creada para practicar con React y sus hooks, conectada a una API pública. 
+            <article className="flex flex-col gap-y-6 text-gray-300">eCollectic es una plataforma de eCommerce sencilla creada para practicar con React y sus hooks, conectada a una API pública.
             
             <ul className="flex flex-wrap gap-2 ">
               <li>              
@@ -287,7 +286,7 @@ const Project = () => {
                 </span>    
               </div>
             </div>
-            <article className="flex flex-col gap-y-6 text-gray-300">Desarrollamos este proyecto con un cliente real enfocado en la formación y desarrollo de habilidades para la búsqueda de empleo.
+            <article className="flex flex-col gap-y-6 text-gray-300">Desarrollamos este proyecto con un cliente real, enfocado en la formación y desarrollo de habilidades para la búsqueda de empleo.
           
             <ul className="flex flex-wrap gap-2 ">
               <li>              
