@@ -103,7 +103,7 @@ const Project = () => {
               </li>
               <li >
                  
-                   <a href="href=https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/"
+                   <a href="https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/"
                         className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border  border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
                         target="_blank"
                         rel="noreferrer">

@@ -35,10 +35,10 @@ const Main = () => {
               sm:max-w-sm 
               2xl:mx-0 2xl:max-w-3xl 2xl:text-xl 2xl:max-w-[1200px] "
             >
-              Graduado de un bootcamp de 8 meses Fullstack + Ciberseguridad con F5. 
-              Poseo habilidades sólidas en desarrollo web y una gran ética de trabajo en equipo. 
+              Graduado de un bootcamp de 8 meses <span className="text-cyan-300 font-semibold">Fullstack</span> + <span className="text-cyan-300 font-semibold">Ciberseguridad</span> con factoría F5. 
+              Poseo habilidades sólidas en <span className="text-cyan-300 font-semibold">desarrollo web </span>y una gran <span className="text-cyan-300 font-semibold">ética de trabajo en equipo</span>. 
               Mi enfoque versátil me permite crear aplicaciones web funcionales y atractivas. 
-              Estoy comprometido con el aprendizaje continuo y estoy dispuesto a poner en práctica todas mis habilidades al servicio de cualquier desafío.
+              Estoy comprometido con el <span className="text-cyan-300 font-semibold">aprendizaje continuo</span> y estoy dispuesto a poner en práctica todas mis habilidades al servicio de cualquier desafío.
             </motion.p>
 
             <motion.article
