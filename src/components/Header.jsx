@@ -7,17 +7,12 @@ const Header = () => {
         <TypeAnimation
           sequence={[
             
-            "Cada experto en algún momento fue un principiante. - Helen Hayes",
-
-            "No importa cuántas veces fracases. Debes seguir intentándolo. Esto es lo que diferencia a los grandes de los mediocres.- Albert Einstein",
-
-            "El aprendizaje es un tesoro que seguirá siendo nuestro hasta el último aliento. - Mahatma Gandhi",
-
-            "No es la más fuerte de las especies la que sobrevive, ni la más inteligente, sino la que responde mejor al cambio.- Charles Darwin",
-
-            "Nunca es demasiado tarde para ser quien podrías haber sido.- George Eliot",
-
-            "No se trata de rehacerse, sino de deshacerse de lo que ya no te hace bien.- Oprah Winfrey",
+            "Cada experto en algún momento fue un principiante. - Helen Hayes.",
+            "No importa cuántas veces fracases. Debes seguir intentándolo. Esto es lo que diferencia a los grandes de los mediocres.- Albert Einstein.",
+            "El aprendizaje es un tesoro que seguirá siendo nuestro hasta el último aliento.- Mahatma Gandhi.", 
+            "No es la más fuerte de las especies la que sobrevive, ni la más inteligente, sino la que responde mejor al cambio. - Charles Darwin.",
+            "Nunca es demasiado tarde para ser quien podrías haber sido.- George Eliot ",
+            "No se trata de rehacerse, sino de deshacerse de lo que ya no te hace bien.- Oprah Winfrey." 
           ]}
           speed={0.1}
           className="text-cyan-300 "
