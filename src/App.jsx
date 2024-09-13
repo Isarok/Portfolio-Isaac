@@ -9,9 +9,19 @@ import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
 
+import '../src/components/styles.css/animation.css';
 function App() {
   return (
-    <div className="bg-no-repeat bg-cover overflow-hidden text-white bg-black/90 mix-blend-800">
+    <div className="bg-no-repeat bg-cover overflow-hidden text-white bg-black/10 mix-blend-500">
+      <div className="animated-bg">
+      <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        
+        </div>
       <Header />
       <Navbar />
       <Main />
@@ -25,4 +35,6 @@ function App() {
 }
 
 export default App;
+
+
 
