@@ -44,7 +44,7 @@
 
 .animate-background {
   position: absolute;
-  inset: -600%;
+  inset: -700%;
   animation: spin 2s linear infinite;
   background: conic-gradient(from 90deg at 50% 50%, #D6FFFE 0%, #00FFF7 50%, #E2CBFF 100%);
   transition: opacity 0.3s;

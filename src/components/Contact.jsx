@@ -52,7 +52,7 @@ const Contact = () => {
       className="max-w-[1000px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px]  mx-auto py-[20vh] md:py-[30vh] lg:py-[30vh] xl:min-h-[60vh] 2xl:min-h-[100vh] flex items-center justify-center"
       id="contact"
     >
-      <div className="w-[90%] lg:w-[85%] mx-auto">
+      <div className="w-[90%] md:w-[75%] lg:w-[85%] mx-auto">
         <div className="flex flex-col lg:flex-row">
           <motion.div
             variants={fadeIn("right", 0.3)}
@@ -106,8 +106,7 @@ const Contact = () => {
               <span className="btn relative w-full mt-4">
                   <span className="animate-background" />
                    <div
-                    className="inline-flex w-full cursor-pointer items-center justify-center rounded-md bg-[#123] bg-transparent px-16 py-3 text-md font-medium text-gray-50 backdrop-blur-3xl
-                    
+                    className="btn-content inline-flex w-full cursor-pointer items-center justify-center rounded-md px-16  text-md font-medium text-gray-50 backdrop-blur-xl
                     lg:px-48
                     2xl:text-xl 2xl:px-64 "
                    >
@@ -115,9 +114,9 @@ const Contact = () => {
                        href="https://mail.google.com/mail/?view=cm&fs=1&to=isaacfstack@gmail.com"
                        target="_blank"
                        rel="noopener noreferrer"
-                       className="text-gray-50"
+                       className="text-gray-50 btn-link"
                      >
-                      <button className='hover:text-cyan-400'>Enviar</button>
+                      <button className="hover:text-cyan-400 hover:bg-transparent">Enviar</button>
                      </a>
                   </div>
               </span>

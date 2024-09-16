@@ -25,7 +25,7 @@ const Project = () => {
       className="max-w-[1000px]  lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px] mx-auto py-[10vh] relative items-center text-gray-300 rounded-lg md:py-[0vh] lg:py-[28vh] xl:min-h-[60vh] 2xl:min-h-[100vh]"
       id="projects"
     >
-      <div className="w-[75%] md:w-[80%] lg:w-[90%] mx-auto">
+      <div className="w-[75%] md:w-[75%] lg:w-[90%] mx-auto">
         <motion.div
           variants={fadeIn("down", 0.6)}
           initial="hidden"

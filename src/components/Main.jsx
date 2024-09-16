@@ -56,8 +56,8 @@ const Main = () => {
               <span className="btn absolute ">
                   <span className="animate-background" />
                    <div
-                    className="inline-flex  cursor-pointer items-center justify-center rounded-md bg-[#123] px-28 py-2 text-md font-medium text-gray-50 backdrop-blur-3xl
-                    md:px-3
+                    className="inline-flex  cursor-pointer items-center justify-center rounded-md bg-[#123] px-28 py-2 text-md font-medium text-gray-50 backdrop-blur-xl
+                    md:px-w-full
                     lg:px-3
                     xl:px-3
                     2xl:text-xl "
@@ -68,7 +68,7 @@ const Main = () => {
                        rel="noopener noreferrer"
                        className="text-gray-50 "
                      >
-                      <button className="hover:text-cyan-400">Contacto</button>
+                      <button className="hover:text-cyan-400 hover:bg-transparent">Contacto</button>
                      </a>
                   </div>
               </span>
