@@ -2,8 +2,8 @@ import { TypeAnimation } from "react-type-animation";
 
 const Header = () => {
   const sentences = (
-    <div className=" max-w-1200px py-[20vh] xl:min-h-[80vh] flex justify-center items-center h-screen">
-      <h1 className="Center text-[15px] md:text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[30px] text-center text-cyan-400">
+    <div className=" max-w-1000px py-[20vh] xl:min-h-[80vh] flex justify-center items-center h-screen">
+      <h1 className="Center text-[15px] md:text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[30px] text-center px-6 text-cyan-400">
         <TypeAnimation
           sequence={[
             

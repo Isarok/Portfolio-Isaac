@@ -49,10 +49,10 @@ const Contact = () => {
 
   return (
     <section
-      className="max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px]  mx-auto py-[20vh] md:py-[30vh] lg:py-[30vh] xl:min-h-[60vh] 2xl:min-h-[100vh] flex items-center justify-center"
+      className="max-w-[1000px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px]  mx-auto py-[20vh] md:py-[30vh] lg:py-[30vh] xl:min-h-[60vh] 2xl:min-h-[100vh] flex items-center justify-center"
       id="contact"
     >
-      <div className="container mx-auto">
+      <div className="w-[90%] lg:w-[85%] mx-auto">
         <div className="flex flex-col lg:flex-row">
           <motion.div
             variants={fadeIn("right", 0.3)}
@@ -103,13 +103,24 @@ const Contact = () => {
                 className="bg-transparent border-b py-2 outline-none w-full placeholder:text-white focus:border-cyan-400 transition-all duration-300 resize-none"
               ></textarea>
 
-              <button
-                type="submit"
-                className=" w-full rounded-md text-black bg-[#12eff7] px-6 py-3 mt-4 transition-colors border border-black hover:text-[#12eff7] hover:bg-transparent hover:border hover:border-[#12eff7] "
-              >
-                Enviar
-              </button>
-
+              <span className="btn relative w-full mt-4">
+                  <span className="animate-background" />
+                   <div
+                    className="inline-flex w-full cursor-pointer items-center justify-center rounded-md bg-[#123] bg-transparent px-16 py-3 text-md font-medium text-gray-50 backdrop-blur-3xl
+                    
+                    lg:px-48
+                    2xl:text-xl 2xl:px-64 "
+                   >
+                     <a
+                       href="https://mail.google.com/mail/?view=cm&fs=1&to=isaacfstack@gmail.com"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="text-gray-50"
+                     >
+                      <button className='hover:text-cyan-400'>Enviar</button>
+                     </a>
+                  </div>
+              </span>
               <ToastContainer />
             </form>
           </motion.div>

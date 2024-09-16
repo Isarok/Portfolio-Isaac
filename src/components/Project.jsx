@@ -25,7 +25,7 @@ const Project = () => {
       className="max-w-[1000px]  lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px] mx-auto py-[10vh] relative items-center text-gray-300 rounded-lg md:py-[0vh] lg:py-[28vh] xl:min-h-[60vh] 2xl:min-h-[100vh]"
       id="projects"
     >
-      <div className="container mx-auto">
+      <div className="w-[75%] md:w-[80%] lg:w-[90%] mx-auto">
         <motion.div
           variants={fadeIn("down", 0.6)}
           initial="hidden"
@@ -47,7 +47,7 @@ const Project = () => {
           </div>
         </motion.div>
 
-        <div className="flex flex-col -mx-16 lg:mx-auto lg:flex-row ">
+        <div className="flex flex-col  -mx-16 lg:mx-auto lg:flex-row ">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -92,25 +92,37 @@ const Project = () => {
 
             <article className="flex flex-col gap-y-6 text-gray-300"> ECO-DERS es la landing page de una consultoría tecnológica, desarrollada como uno de nuestros primeros proyectos en equipo.     
             <ul className="flex flex-wrap gap-2 ">
-              <li>              
-                <a href="https://github.com/Isarok/Eco-Ders-2"
-                     className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
+            <li>
+              <span className="btn absolute w-full">
+                <span className="animate-background" />
+                  <div className="btn-content">
+                    <a href="https://github.com/Isarok/Eco-Ders-2" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     className="btn-link">
+                      <FaGithub className="icon-general" />
+                      Código
+                    </a>
+                  </div>
+                </span>
+              
+            </li>
+            <li>
+              <span className="relative btn">
+                <span className="animate-background" />
+                  <div className="btn-content">
+                    <a
+                     href="https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/"
                      target="_blank"
-                     rel="noreferrer">
-                    <FaGithub className="flex flex-row text-2xl w-5 h-5 mr-1"/>
-                     Código   
-                 </a>
-              </li>
-              <li >
-                 
-                   <a href="https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/"
-                        className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border  border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
-                        target="_blank"
-                        rel="noreferrer">
-                        <GiWireframeGlobe className="flex flex-row text-2xl w-5 h-5 mr-1"/>
-                         Demo                   
-                   </a>
-               </li>
+                     rel="noopener noreferrer"
+                     className="btn-link"
+                    >
+                    <GiWireframeGlobe className="icon-general" />
+                    Demo
+                  </a>
+                </div>
+              </span>
+            </li>
             </ul>
             </article>
 
@@ -151,15 +163,19 @@ const Project = () => {
             <article className="flex flex-col gap-y-6 text-gray-300">Apolliculture es un marketplace de mieles desarrollado con TypeScript, que integra tanto frontend como backend. 
             
             <ul className="flex flex-wrap gap-2  ">
-              <li >              
-                <a href="https://github.com/DenisseNavarro/Apolliculture"
-                     className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
-                     target="_blank"
-                     rel="noreferrer">
-                    <FaGithub className="flex flex-row text-2xl w-5 h-5 mr-1"/>
-                     Código   
-                 </a>
-                
+              <li >
+                <span className="btn absolute w-full">
+                  <span className="animate-background" />
+                    <div className="btn-content">              
+                      <a href="https://github.com/DenisseNavarro/Apolliculture"
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="btn-link">
+                        <FaGithub className="icon-general"/>
+                        Código   
+                      </a>
+                    </div>
+                  </span> 
               </li>
               <li >
                  
@@ -224,25 +240,35 @@ const Project = () => {
             <article className="flex flex-col gap-y-6 text-gray-300">eCollectic es una plataforma de eCommerce sencilla creada para practicar con React y sus hooks, conectada a una API pública.
             
             <ul className="flex flex-wrap gap-2 ">
-              <li>              
-                <a href="https://github.com/Isarok/Ecollec"
-                     className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
-                     target="_blank"
-                     rel="noreferrer">
-                    <FaGithub className="flex flex-row text-2xl w-5 h-5 mr-1"/>
-                     Código   
-                 </a>
-                
+              <li>
+                <span className="btn absolute w-full">
+                  <span className="animate-background" />
+                    <div className="btn-content">
+
+                      <a href="https://github.com/Isarok/Ecollec"
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       className="btn-link">
+                        <FaGithub className="flex flex-row text-2xl w-5 h-5 mr-1"/>
+                         Código   
+                      </a>
+                    </div>
+                  </span>             
               </li>
-              <li >
+              <li>
+                <span className="relative btn">
+                  <span className="animate-background" />
+                    <div className="btn-content">
                  
-                   <a href="https://ecollec-isaacs-projects-b15fcb7e.vercel.app/"
-                        className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border  border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
+                      <a href="https://ecollec-isaacs-projects-b15fcb7e.vercel.app/"
                         target="_blank"
-                        rel="noreferrer">
+                        rel="noopener noreferrer"
+                        className="btn-link">
                         <GiWireframeGlobe className="flex flex-row text-2xl w-5 h-5 mr-1"/>
                          Demo                   
-                   </a>
+                      </a>
+                    </div>
+                  </span>
                </li>
             </ul>
             </article>
@@ -289,24 +315,34 @@ const Project = () => {
             <article className="flex flex-col gap-y-6 text-gray-300">Desarrollamos este proyecto con un cliente real, enfocado en la formación y desarrollo de habilidades para la búsqueda de empleo.
           
             <ul className="flex flex-wrap gap-2 ">
-              <li>              
-                <a href="https://github.com/Isarok/EmpleateConTalentoFront"
-                     className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
-                     target="_blank"
-                     rel="noreferrer">
-                    <FaGithub className="flex flex-row text-2xl w-5 h-5 mr-1"/>
-                     Código   
-                 </a>
-                
+              <li>
+                <span className="relative btn">
+                  <span className="animate-background" />
+                    <div className="btn-content">          
+                      <a href="https://github.com/Isarok/EmpleateConTalentoFront"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-link">
+                        <FaGithub className="flex flex-row text-2xl w-5 h-5 mr-1"/>
+                        Código   
+                      </a>
+                    </div>
+                  </span>
               </li>
-              <li >       
-                  <a href="https://empleate-con-talento-front.vercel.app/"
-                      className="inline-flex items-center justify-between px-3 py-2 text-xs font-semibold text-center text-black bg-white transition border  border-black/60 rounded-lg hover:bg-black/10 hover:text-gray-200 hover:border-gray-200 md:text-sm "                 
-                      target="_blank"
-                      rel="noreferrer">
-                      <GiWireframeGlobe className="flex flex-row text-2xl w-5 h-5 mr-1"/>
+              <li>
+                <span className="relative btn">
+                  <span className="animate-background" />
+                    <div className="btn-content">
+
+                      <a href="https://empleate-con-talento-front.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-link">
+                        <GiWireframeGlobe className="flex flex-row text-2xl w-5 h-5 mr-1"/>
                         Demo                   
-                  </a>
+                      </a>
+                    </div>
+                  </span>
                </li>
             </ul>
             </article>

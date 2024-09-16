@@ -7,10 +7,10 @@ import img from "../img/PruebaImg.png";
 const Main = () => {
   return (
     <section
-      className="section py-[20vh] md:py-[30vh] lg:py-[26vh] xl:min-h-[60vh] 2xl:min-h-[100vh] "
+      className=" py-[20vh] md:py-[30vh] lg:py-[26vh] xl:min-h-[60vh] 2xl:min-h-[100vh] "
       id="home"
     >
-      <div className="container mx-auto lg:max-w-[1000px] 2xl:max-w-[1200px] ">
+      <div className=" mx-auto w-[80%] lg:w-[65%] lg:max-w-[1000px] 2xl:max-w-[1200px] ">
         <div className="flex flex-col md:flex-row lg:flex-row lg:items-center gap-y-10 lg:gap-y-20 lg:gap-x-20">
           <div className="flex-1 font-secondary md:text-left lg:text-left ">
             <motion.div
@@ -46,30 +46,34 @@ const Main = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex flex-col mx-auto items-center gap-y-4
+              className="flex flex-wrap justify-center mx-auto items-center gap-y-4
                          md:gap-8 md:flex md:flex-row md:justify-start
                          lg:gap-20   
                          2xl:mb-0 2xl:mx-0 "
                         
                       
             >
-              <span className="relative inline-block overflow-hidden my-0 rounded-md p-[2px]">
-                  <span className="absolute inset-[-100%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#D6FFFE_0%,#00FFF7_50%,#E2CBFF_100%)]" />
+              <span className="btn absolute ">
+                  <span className="animate-background" />
                    <div
-                    className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-gray-950  px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl
-                    2xl:text-2xl "
+                    className="inline-flex  cursor-pointer items-center justify-center rounded-md bg-[#123] px-28 py-2 text-md font-medium text-gray-50 backdrop-blur-3xl
+                    md:px-3
+                    lg:px-3
+                    xl:px-3
+                    2xl:text-xl "
                    >
                      <a
                        href="https://mail.google.com/mail/?view=cm&fs=1&to=isaacfstack@gmail.com"
                        target="_blank"
                        rel="noopener noreferrer"
-                       className="text-gray-50"
+                       className="text-gray-50 "
                      >
-                      <button >Contacto</button>
+                      <button className="hover:text-cyan-400">Contacto</button>
                      </a>
                   </div>
               </span>
-              <ul className="flex justify-around m-4 md:m-0 gap-x-10 gap-y-2">
+              <ul className="flex justify-between m-6 md:m-0 gap-x-12 gap-y-2
+              lg:gap-x-8   ">
                 <li >
                 <a
                   href="https://docs.google.com/document/d/1pF7dyoWNfUFHGvCdg0XtNNPOKMay5a6l/edit?usp=sharing&ouid=105822291999599368082&rtpof=true&sd=true"
@@ -129,7 +133,7 @@ const Main = () => {
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             whileInView={"show"}
-            className="flex-1 max-w-[220px] lg:max-w-[280px] xl:max-w-[280px] 2xl:max-w-[460px] lg:mx-0
+            className="flex-1 2xl:max-w-[460px] lg:mx-0
             md:max-w-[280px] md:flex-row "
           >
               <img

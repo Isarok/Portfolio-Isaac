@@ -7,14 +7,14 @@ import img from "../img/EscalandoB.png";
 const AboutMe = () => {
   return (
     <section className=" py-[10vh] md:py-[20vh] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px] lg:mx-auto lg:py-[28vh] xl:min-h-[60vh] 2xl:min-h-[100vh]" id="aboutMe">
-      <div className="container mx-auto ">
+      <div className="w-[80%] lg:w-[85%] mx-auto ">
         <div className="flex flex-col justify-center items-center lg:flex-row lg:items-center gap-y-10 lg:gap-y-0 lg:gap-x-32 2xl:gap-x-48 ">
           <div className="flex-1 text-center font-secondary md:text-right lg:text-left">
             <motion.div
               variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              className=" max-w-[220px] lg:max-w-[380px] xl:max-w-[380px] 2xl:max-w-[460px] lg:mx-0
+              className="  lg:max-w-[380px] xl:max-w-[380px] 2xl:max-w-[460px] lg:mx-0
               md:max-w-[580px] md:flex-row "
             >
               <img
@@ -48,10 +48,17 @@ const AboutMe = () => {
             </h3>
                 
             <Link to="projects">
-              <button className="rounded-md text-black bg-[#12eff7] px-6 py-3 transition-colors hover:text-[#12eff7] border border-black hover:bg-transparent hover:border hover:border-[#12eff7]
-              ">
-                Curiosea mis proyectos
-              </button>
+            <span className="btn absolute w-full">
+                  <span className="animate-background" />
+                   <div
+                    className="inline-flex w-full cursor-pointer items-center justify-center rounded-md bg-gray-950 px-3 py-2 text-md font-medium text-gray-50 backdrop-blur-3xl
+                    md:px-48
+                    lg:px-20
+                    2xl:text-xl "
+                   >
+                      <button className="hover:text-cyan-400">Curiosea mis proyectos </button>
+                  </div>
+              </span>
             </Link>
           </motion.div>
         </div>
