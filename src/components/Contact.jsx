@@ -49,11 +49,16 @@ const Contact = () => {
 
   return (
     <section
-      className="max-w-[1000px] lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px]  mx-auto py-[20vh] md:py-[30vh] lg:py-[30vh] xl:min-h-[60vh] 2xl:min-h-[100vh] flex items-center justify-center"
-      id="contact"
+      className="flex items-center justify-center max-w-[340px] mx-auto py-[20vh]
+                md:max-w-[600px] md:py-[30vh]
+                lg:max-w-[400px] lg:py-[20vh]
+                xl:max-w-[800px] xl:min-h-[60vh]
+                2xl:max-w-[1200px] "
+                id="contact"
     >
-      <div className="w-[90%] lg:w-[85%] mx-auto">
-        <div className="flex flex-col lg:flex-row">
+      <div className="mx-auto">
+        <div className="flex flex-col 
+                        lg:flex-row">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -62,10 +67,15 @@ const Contact = () => {
             className="flex-1 flex justify-start items-center"
           >
             <div className='md:pl-6'>
-              <h4 className="text-lg md:text-xl lg:text-3xl uppercase text-cyan-400 font-medium mb-6 tracking-wide">
+              <h4 className="text-lg uppercase text-cyan-400 font-medium mb-6 tracking-wide
+                            md:text-3xl 
+                            lg:text-3xl">
                 Contacto :
               </h4>
-              <h2 className="text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl leading-none font-semibold">
+              <h2 className="text-2xl leading-none font-semibold
+                             md:text-3xl 
+                             lg:text-5xl 
+                             2xl:text-6xl ">
                 Trabajemos juntos
               </h2>
             </div>
@@ -78,8 +88,10 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 lg:mt-0 mt-8 border rounded-2xl flex flex-col gap-y-4 pb-20 p-6 items-start border-[#12eff7]  border-t-4 border-r-4 text-white"
           >
-            <form className="bg-opacity-full w-full " ref={form} onSubmit={handleSubmit}>
-              <label htmlFor="name">Nombre completo <span className="text-cyan-500">*</span></label>
+            <form className="bg-opacity-full w-full
+                             md:text-xl" 
+                  ref={form} onSubmit={handleSubmit}>
+              <label htmlFor="name" id='name'>Nombre completo <span className="text-cyan-500">*</span></label>
               <input
                 type="text"
                 name="user_name"
@@ -106,10 +118,9 @@ const Contact = () => {
               <span className="btn relative w-full mt-4">
                   <span className="animate-background" />
                    <div
-                    className="inline-flex w-full cursor-pointer items-center justify-center rounded-md bg-[#123] bg-transparent px-16 py-3 text-md font-medium text-gray-50 backdrop-blur-3xl
-                    
-                    lg:px-48
-                    2xl:text-xl 2xl:px-64 "
+                    className="inline-flex w-full items-center justify-center cursor-pointer rounded-md bg-[#123] px-16 py-3 text-md font-medium text-gray-50 backdrop-blur-3xl
+                               lg:px-48
+                               2xl:text-xl 2xl:px-64 "
                    >
                      <a
                        href="https://mail.google.com/mail/?view=cm&fs=1&to=isaacfstack@gmail.com"

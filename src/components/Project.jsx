@@ -22,23 +22,35 @@ import { GiWireframeGlobe } from "react-icons/gi";
 const Project = () => {
   return (
     <section
-      className="max-w-[1000px]  lg:max-w-[1000px] xl:max-w-[1000px] 2xl:max-w-[1200px] mx-auto py-[10vh] relative items-center text-gray-300 rounded-lg md:py-[0vh] lg:py-[28vh] xl:min-h-[60vh] 2xl:min-h-[100vh]"
-      id="projects"
+      className="max-w-[300px] mx-auto py-[10vh] relative items-center text-gray-300 rounded-lg
+                 md:max-w-[600px] md:py-[20vh]
+                 lg:max-w-[1000px] lg:py-[20vh]
+                 xl:max-w-[1000px] xl:min-h-[20vh]
+                 2xl:max-w-[1200px] 2xl:min-h-[100vh]"
+                 id="projects"
     >
-      <div className="w-[75%] md:w-[80%] lg:w-[90%] mx-auto">
+      <div className="flex flex-col mx-auto">
         <motion.div
           variants={fadeIn("down", 0.6)}
           initial="hidden"
           whileInView={"show"}
           className="flex-1 2xl:max-w-[100%] lg:mx-0"
         >
-          <div className="xl:m-8 2xl:m-8 ">
-            <h2 className="text-xl text-cyan-400 leading-tight font-semibold 
-            xl:max-w-[1000px] xl:container 
-            2xl:text-2xl">
+          <div className="md:m-[-1rem] 
+                          lg:m-8 
+                          xl:m-8 
+                          2xl:m-8 ">
+            <h2 className="text-xl text-cyan-400 leading-tight font-semibold
+                           md:text-2xl
+                           lg:text-xl 
+                           xl:max-w-[1000px] 
+                           2xl:text-2xl">
               Estos son los últimos proyectos en los que colaboré, tanto en equipo como en solitario.
             </h2>
-            <p className="max-w-[100%] mb-4 
+            <p className="mb-4
+                         md:text-xl md:py-2
+                         lg:text-lg lg:mb-2
+                         xl:text-xl
                          2xl:text-xl ">
               Puedes verlos a continuación. Usamos la metodología <span className="text-cyan-300 font-semibold">Scrum</span> y <span className="text-cyan-300  font-semibold">Kanban</span>, 
               además de control de versiones con Git para llevarlos a cabo. 
@@ -47,7 +59,9 @@ const Project = () => {
           </div>
         </motion.div>
 
-        <div className="flex flex-col  -mx-16 lg:mx-auto lg:flex-row ">
+        <div className="flex flex-col -mx-16
+                        
+                        lg:mx-auto lg:flex-row ">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
@@ -90,7 +104,9 @@ const Project = () => {
               </div>
             </div>
 
-            <article className="flex flex-col gap-y-6 text-gray-300"> ECO-DERS es la landing page de una consultoría tecnológica, desarrollada como uno de nuestros primeros proyectos en equipo.     
+            <article className="flex flex-col gap-y-6 text-gray-300
+                                md:text-xl"> 
+            ECO-DERS es la landing page de una consultoría tecnológica, desarrollada como uno de nuestros primeros proyectos en equipo.     
             <ul className="flex flex-wrap gap-2 ">
             <li>
               <span className="btn absolute w-full">
@@ -160,7 +176,9 @@ const Project = () => {
                 </span>
               </div>
             </div>
-            <article className="flex flex-col gap-y-6 text-gray-300">Apolliculture es un marketplace de mieles desarrollado con TypeScript, que integra tanto frontend como backend. 
+            <article className="flex flex-col gap-y-6 text-gray-300
+                                md:text-xl">
+            Apolliculture es un marketplace de mieles desarrollado con TypeScript, que integra tanto frontend como backend. 
             
             <ul className="flex flex-wrap gap-2  ">
               <li >
@@ -237,7 +255,9 @@ const Project = () => {
                 </span>
               </div>
             </div>
-            <article className="flex flex-col gap-y-6 text-gray-300">eCollectic es una plataforma de eCommerce sencilla creada para practicar con React y sus hooks, conectada a una API pública.
+            <article className="flex flex-col gap-y-6 text-gray-300
+                                md:text-xl">
+              eCollectic es una plataforma de eCommerce sencilla creada para practicar con React y sus hooks, conectada a una API pública.
             
             <ul className="flex flex-wrap gap-2 ">
               <li>
@@ -312,7 +332,9 @@ const Project = () => {
                 </span>    
               </div>
             </div>
-            <article className="flex flex-col gap-y-6 text-gray-300">Desarrollamos este proyecto con un cliente real, enfocado en la formación y desarrollo de habilidades para la búsqueda de empleo.
+            <article className="flex flex-col gap-y-6 text-gray-300
+                                md:text-xl">
+              Desarrollamos este proyecto con un cliente real, enfocado en la formación y desarrollo de habilidades para la búsqueda de empleo.
           
             <ul className="flex flex-wrap gap-2 ">
               <li>
