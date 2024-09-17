@@ -36,16 +36,15 @@
   border-radius: 0.375rem;
   padding: 2px;
   cursor: pointer;
-  font-weight: 500;
   text-align: center;
   background-color: #2d2d2d;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
 .animate-background {
   position: absolute;
-  inset: -700%;
-  animation: spin 2s linear infinite;
+  inset: -600%;
+  animation: spin 4s linear infinite;
   background: conic-gradient(from 90deg at 50% 50%, #D6FFFE 0%, #00FFF7 50%, #E2CBFF 100%);
   transition: opacity 0.3s;
 }
@@ -133,7 +132,7 @@
     @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
   }
   .btn {
-    @apply rounded-full font-primary font-medium;
+    @apply rounded-full  font-medium;
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;

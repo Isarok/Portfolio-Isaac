@@ -7,21 +7,36 @@ import img from "../img/PruebaImg.png";
 const Main = () => {
   return (
     <section
-      className=" py-[20vh] md:py-[30vh] lg:py-[26vh] xl:min-h-[60vh] 2xl:min-h-[100vh] "
-      id="home"
+      className=" py-[20vh] 
+                  md:py-[30vh] 
+                  lg:py-[26vh] 
+                  xl:min-h-[60vh] 
+                  2xl:min-h-[100vh] "
+                  id="home"
     >
-      <div className=" mx-auto w-[80%] lg:w-[65%] lg:max-w-[1000px] 2xl:max-w-[1200px] ">
-        <div className="flex flex-col md:flex-row lg:flex-row lg:items-center gap-y-10 lg:gap-y-20 lg:gap-x-20">
-          <div className="flex-1 font-secondary md:text-left lg:text-left ">
+      <div className=" mx-auto max-w-[300px] 
+                       md:max-w-[600px] 
+                       lg:max-w-[1000px] 
+                       xl:max-w-[1000px] 
+                       2xl:max-w-[1200px] ">
+        <div className="flex flex-col gap-y-10
+                        md:flex-row 
+                        lg:flex-row lg:items-center lg:gap-y-10 lg:gap-x-10">
+          <div className="flex-1 
+                          md:text-left 
+                          lg:text-left ">
             <motion.div
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-4 text-[26px] lg:text-[50px] 2xl:text-[60px]  uppercase leading-[1] font-semibold"
+              className="mb-2 text-[32px] lg:text-[50px] 2xl:text-[50px] uppercase leading-[1] font-semibold"
             >
               <span className="mr-2">Soy</span>
-              <span className="bg-gradient-to-r from-[rgba(2,165,184,1)] from-[10%] via-[rgba(0,228,255,1)] via-[30%] to-[rgba(152,251,255,1)] to-[90%] text-transparent bg-clip-text">Isaac Garcia Romero.</span>
+              <span 
+                className="bg-gradient-to-r from-[rgba(2,165,184,1)] from-[10%] via-[rgba(0,228,255,1)] via-[30%] to-[rgba(152,251,255,1)] to-[90%] text-transparent bg-clip-text">
+                Isaac Garcia Romero.
+              </span>
             </motion.div>
 
             <motion.p
@@ -30,10 +45,9 @@ const Main = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.5 }}
               className="mb-6 max-w-lg
-              md:mb-8
-              lg:mb-12 lg:max-w-xl
-              sm:max-w-sm 
-              2xl:mx-0 2xl:max-w-3xl 2xl:text-xl 2xl:max-w-[1200px] "
+              md:mb-6
+              lg:mb-18 lg:text-lg lg:max-w-[1000px]
+              2xl:mx-0 2xl:text-xl 2xl:max-w-[1200px] "
             >
               Graduado de un bootcamp de 8 meses <span className="text-cyan-300 font-semibold">Fullstack</span> + <span className="text-cyan-300 font-semibold">Ciberseguridad</span> con factoría F5. 
               Poseo habilidades sólidas en <span className="text-cyan-300 font-semibold">desarrollo web </span>y una gran <span className="text-cyan-300 font-semibold">ética de trabajo en equipo</span>. 
@@ -48,16 +62,16 @@ const Main = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex flex-wrap justify-center mx-auto items-center gap-y-4
                          md:gap-8 md:flex md:flex-row md:justify-start
-                         lg:gap-20   
-                         2xl:mb-0 2xl:mx-0 "
+                         lg:gap-20 lg:flex lg:flex-row    
+                         2xl:mb-0 2xl:mx-0 2xl:gap-12 2xl:flex 2xl:flex-row 2xl:justify-start"
                         
                       
             >
               <span className="btn absolute ">
                   <span className="animate-background" />
                    <div
-                    className="inline-flex  cursor-pointer items-center justify-center rounded-md bg-[#123] px-28 py-2 text-md font-medium text-gray-50 backdrop-blur-xl
-                    md:px-w-full
+                    className="inline-flex cursor-pointer items-center justify-center rounded-md bg-[#123] px-28 py-1  text-gray-50 backdrop-blur-3xl
+                    md:w-full
                     lg:px-3
                     xl:px-3
                     2xl:text-xl "
@@ -68,21 +82,22 @@ const Main = () => {
                        rel="noopener noreferrer"
                        className="text-gray-50 "
                      >
-                      <button className="hover:text-cyan-400 hover:bg-transparent">Contacto</button>
+                      <button className="hover:text-cyan-400 ">Contacto</button>
                      </a>
                   </div>
               </span>
-              <ul className="flex justify-between m-6 md:m-0 gap-x-12 gap-y-2
-              lg:gap-x-8   ">
+              <ul className="flex justify-around m-4 md:m-0 gap-x-12 gap-y-12
+                             lg:gap-x-16
+                             2xl:gap-x-20">
                 <li >
-                <a
-                  href="https://docs.google.com/document/d/1pF7dyoWNfUFHGvCdg0XtNNPOKMay5a6l/edit?usp=sharing&ouid=105822291999599368082&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                  <a
+                    href="https://docs.google.com/document/d/1pF7dyoWNfUFHGvCdg0XtNNPOKMay5a6l/edit?usp=sharing&ouid=105822291999599368082&rtpof=true&sd=true"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <svg width="0" height="0">
                       <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%" x3="0%" y3="0%">
-                      <stop offset="0%" style={{ stopColor: "rgba(2,165,184,1)", stopOpacity: 1 }} />
+                        <stop offset="0%" style={{ stopColor: "rgba(2,165,184,1)", stopOpacity: 1 }} />
                         <stop offset="50%" style={{ stopColor: "rgba(0,228,255,1)", stopOpacity: 1 }} />
                         <stop offset="100%" style={{ stopColor: "rgba(152,251,255,1)", stopOpacity: 1 }} />
                       </linearGradient>
@@ -133,8 +148,12 @@ const Main = () => {
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             whileInView={"show"}
-            className="flex-1 2xl:max-w-[460px] lg:mx-0
-            md:max-w-[280px] md:flex-row "
+            className="flex-1 lg:mx-0
+                       md:max-w-[280px] md:flex-row 
+                       lg:max-w-[350px] lg:flex-col
+                       xl:max-w-[350px] xl:flex-row
+                       2xl:max-w-[550px] 2xl:flex-row
+            "
           >
               <img
                 src={img}
