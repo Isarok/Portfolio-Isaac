@@ -69,22 +69,18 @@ const Main = () => {
             >
               <span className="btn absolute ">
                   <span className="animate-background" />
-                   <div
-                    className="inline-flex cursor-pointer items-center justify-center rounded-md bg-[#123] px-28 py-1  text-gray-50 backdrop-blur-3xl
-                    md:w-full
-                    lg:px-3
-                    xl:px-3
-                    2xl:text-xl "
-                   >
                      <a
                        href="https://mail.google.com/mail/?view=cm&fs=1&to=isaacfstack@gmail.com"
                        target="_blank"
                        rel="noopener noreferrer"
-                       className="text-gray-50 "
+                       className=" inline-flex cursor-pointer items-center justify-center rounded-md bg-[#123] px-28 py-1  text-gray-50  hover:text-cyan-400 backdrop-blur-3xl
+                       md:w-full
+                       lg:px-3
+                       xl:px-3
+                       2xl:text-xl"
                      >
-                      <button className="hover:text-cyan-400 ">Contacto</button>
+                      Contacto
                      </a>
-                  </div>
               </span>
               <ul className="flex justify-around m-4 md:m-0 gap-x-12 gap-y-12
                              lg:gap-x-16

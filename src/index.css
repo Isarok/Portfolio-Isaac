@@ -5,11 +5,7 @@
 :root {
   --toastify-toast-width: 720px;
   --toastify-color-progress-dark: #00c7c7;
-  --toastify-text-color-dark: #fff;
-  
-}
-.active {
-  background: #00c7c7;
+  --toastify-text-color-dark: #fff; 
 }
 
 .active {

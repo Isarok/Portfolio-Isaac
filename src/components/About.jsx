@@ -63,10 +63,10 @@ const AboutMe = () => {
                           md:max-w-[600px] md:text-[20px] md:text-2xl 
                           lg:text-lg
                           2xl:mb-20 2xl:max-w-[800px] 2xl:text-xl 2xl:text-3xl  ">
-            Después de años explorando las alturas, 
-            desafiando límites en la escalada y haciendo tours internacionales con grandes artistas, 
-            decidí que era hora de explorar nuevos horizontes. Es un giro de 180° emocionante y que me entusiasma. 
-            Estoy preparado para aplicar la misma determinación y pasión que he llevado a lo largo de estos años a este nuevo desafío.
+              Después de años explorando las alturas, 
+              desafiando límites en la escalada y haciendo tours internacionales con grandes artistas, 
+              decidí que era hora de explorar nuevos horizontes. Es un giro de 180° emocionante y que me entusiasma. 
+              Estoy preparado para aplicar la misma determinación y pasión que he llevado a lo largo de estos años a este nuevo desafío.
             </h3>
                 
             <Link to="projects">
