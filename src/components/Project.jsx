@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
-import Ecollectic from "../img/Ecollectic.png";
-import Apolliculture from "../img/Apolliculture.png";
-import EcoDers from "../img/EcoDers.png";
-import Empleate from "../img/Empleate.png";
+import Ecollectic from "../images/Ecollectic.png";
+import Apolliculture from "../images/Apolliculture.png";
+import EcoDers from "../images/EcoDers.png";
+import Empleate from "../images/Empleate.png";
 import { FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
 import {
   SiTypescript,

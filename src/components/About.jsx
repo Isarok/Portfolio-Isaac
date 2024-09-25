@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import { Link } from "react-scroll";
-import img from "../img/EscalandoB.png";
+import img from "../images/EscalandoB.png";
 
 const AboutMe = () => {
   return (

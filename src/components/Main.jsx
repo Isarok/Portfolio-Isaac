@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
 import { PiReadCvLogo } from "react-icons/pi";
-import img from "../img/PruebaImg.png";
+import img from "../images/PruebaImg.png";
 
 const Main = () => {
   return (
