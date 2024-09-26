@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
 import { PiReadCvLogo } from "react-icons/pi";
-import img from "../images/PruebaImg.png";
+import img from "../assets/images/PruebaImg.png";
 
 const Main = () => {
   return (
@@ -82,15 +82,6 @@ const Main = () => {
                       Contacto
                      </a>
               </span>
-              <ul className="flex justify-around m-4 md:m-0 gap-x-12 gap-y-12
-                             lg:gap-x-16
-                             2xl:gap-x-20">
-                <li >
-                  <a
-                    href="https://docs.google.com/document/d/1pF7dyoWNfUFHGvCdg0XtNNPOKMay5a6l/edit?usp=sharing&ouid=105822291999599368082&rtpof=true&sd=true"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
                     <svg width="0" height="0">
                       <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%" x3="0%" y3="0%">
                         <stop offset="0%" style={{ stopColor: "rgba(2,165,184,1)", stopOpacity: 1 }} />
@@ -98,6 +89,16 @@ const Main = () => {
                         <stop offset="100%" style={{ stopColor: "rgba(152,251,255,1)", stopOpacity: 1 }} />
                       </linearGradient>
                     </svg>
+              <ul className="flex justify-around m-4 md:m-0 gap-x-12 gap-y-12
+                             lg:gap-x-16
+                             2xl:gap-x-20">
+                <li>
+                  <a
+                    href="https://docs.google.com/document/d/1pF7dyoWNfUFHGvCdg0XtNNPOKMay5a6l/edit?usp=sharing&ouid=105822291999599368082&rtpof=true&sd=true"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    
                   <PiReadCvLogo style={{ fill: "url(#grad1)" }}
                                 type="button"
                                 className="text-4xl 2xl:text-5xl  hover:scale-x-150 hover:scale-y-150 	" />
@@ -105,7 +106,7 @@ const Main = () => {
                 </li>
                 <li>
                 <a
-                  href="https://github.com/Isarok"
+                  href="https://github.com/Isarok" 
                   target="_blank"
                   rel="noreferrer"
                 >

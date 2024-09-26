@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import { Link } from "react-scroll";
-import img from "../images/EscalandoB.png";
+import img from "../assets/images/EscalandoB.png";
 
 const AboutMe = () => {
   return (
@@ -69,18 +69,16 @@ const AboutMe = () => {
               Estoy preparado para aplicar la misma determinación y pasión que he llevado a lo largo de estos años a este nuevo desafío.
             </h3>
                 
-            <Link to="projects">
-            <span className="btn absolute w-full">
-                  <span className="animate-background " />
-                   <div
+            <Link to="projects" className="btn absolute w-full">
+              <span className="animate-background " />
+                <div
                     className="inline-flex w-full cursor-pointer items-center justify-center rounded-md bg-gray-950 px-3 py-1 text-md font-medium text-gray-50 backdrop-blur-3xl
                     md:px-48
                     lg:px-20 
                     2xl:text-xl "
                    >
                       <button className="hover:text-cyan-400 md:text-[16px]">Curiosea mis proyectos </button>
-                  </div>
-              </span>
+                </div>
             </Link>
           </motion.div>
         </div>
