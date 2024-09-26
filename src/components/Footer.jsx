@@ -69,7 +69,7 @@ const Footer = () => {
                 filter:
                 "drop-shadow(3px 3.42184px 1.23px rgba(89, 219, 297, 1))",
               }}>
-          © 2024 🚀 Together we further.
+              © 2024 🚀 Together we further.
         </div>
     </section>
   );

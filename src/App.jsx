@@ -9,7 +9,6 @@ import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
 
-import '../src/components/styles.css/animation.css';
 function App() {
   return (
     <div className="bg-no-repeat bg-cover overflow-hidden text-white bg-black/10 mix-blend-500">

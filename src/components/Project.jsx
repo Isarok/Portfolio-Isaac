@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
-import Ecollectic from "../images/Ecollectic.png";
-import Apolliculture from "../images/Apolliculture.png";
-import EcoDers from "../images/EcoDers.png";
-import Empleate from "../images/Empleate.png";
+import Ecollectic from "../assets/images/Ecollectic.png";
+import Apolliculture from "../assets/images/Apolliculture.png";
+import EcoDers from "../assets/images/EcoDers.png";
+import Empleate from "../assets/images/Empleate.png";
 import { FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
 import {
   SiTypescript,
@@ -24,7 +24,7 @@ const Project = () => {
     <section
       className="max-w-[300px] mx-auto py-[10vh] relative items-center text-gray-300 rounded-lg
                  md:max-w-[600px] md:py-[20vh]
-                 lg:max-w-[1000px] lg:py-[20vh]
+                 lg:max-w-[1000px] lg:py-[10vh]
                  xl:max-w-[1000px] xl:min-h-[20vh]
                  2xl:max-w-[1200px] 2xl:min-h-[100vh]"
                  id="projects"
@@ -49,7 +49,7 @@ const Project = () => {
             </h2>
             <p className="mb-4
                          md:text-xl md:py-2
-                         lg:text-lg lg:mb-2
+                         lg:text-lg lg:mb-0
                          xl:text-xl
                          2xl:text-xl ">
               Puedes verlos a continuación. Usamos la metodología <span className="text-cyan-300 font-semibold">Scrum</span> y <span className="text-cyan-300  font-semibold">Kanban</span>, 
@@ -104,43 +104,46 @@ const Project = () => {
               </div>
             </div>
 
-            <article className="flex flex-col gap-y-6 text-gray-300
-                                md:text-xl"> 
-            ECO-DERS es la landing page de una consultoría tecnológica, desarrollada como uno de nuestros primeros proyectos en equipo.     
+          <article className="flex flex-col gap-y-6 text-gray-300
+                              md:text-xl"> 
+            <h2 className="text-lg font-bold mb-0">ECO-DERS</h2>
+              <p className="mb-0">
+                Landing page de una consultoría tecnológica, desarrollada como uno de nuestros primeros proyectos en equipo.
+              </p>
+            
             <ul className="flex flex-wrap gap-2 ">
-            <li>
-              <span className="btn absolute w-full">
-                <span className="animate-background" />
-                  <div className="btn-content">
-                    <a href="https://github.com/Isarok/Eco-Ders-2" 
-                     target="_blank" 
-                     rel="noopener noreferrer" 
-                     className="btn-link">
-                      <FaGithub className="icon-general" />
-                      Código
-                    </a>
-                  </div>
+              <li>
+                <span className="btn absolute w-full">
+                  <span className="animate-background" />
+                    <div className="btn-content">
+                      <a href="https://github.com/Isarok/Eco-Ders-2" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       className="btn-link">
+                        <FaGithub className="icon-general" />
+                         Código
+                      </a>
+                    </div>
                 </span>
-              
-            </li>
-            <li>
-              <span className="relative btn">
-                <span className="animate-background" />
-                  <div className="btn-content">
-                    <a
-                     href="https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     className="btn-link"
-                    >
-                    <GiWireframeGlobe className="icon-general" />
-                    Demo
-                  </a>
-                </div>
-              </span>
-            </li>
+              </li>
+              <li>
+                <span className="relative btn">
+                  <span className="animate-background" />
+                    <div className="btn-content">
+                      <a
+                       href="https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="btn-link"
+                      >
+                        <GiWireframeGlobe className="icon-general" />
+                         Demo
+                      </a>
+                    </div>
+                  </span>
+              </li>
             </ul>
-            </article>
+          </article>
 
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 z-40 w-full h-full absolute transition-all duration-300 cursor-pointer"></div>
@@ -178,7 +181,8 @@ const Project = () => {
             </div>
             <article className="flex flex-col gap-y-6 text-gray-300
                                 md:text-xl">
-            Apolliculture es un marketplace de mieles desarrollado con TypeScript, que integra tanto frontend como backend. 
+                                  <h2 className="text-lg font-bold mb-0">Apolliculture</h2>
+           <p className="mb-0">Marketplace de mieles desarrollado con TypeScript, que integra tanto frontend como backend. </p>
             
             <ul className="flex flex-wrap gap-2  ">
               <li >
@@ -257,7 +261,8 @@ const Project = () => {
             </div>
             <article className="flex flex-col gap-y-6 text-gray-300
                                 md:text-xl">
-              eCollectic es una plataforma de eCommerce sencilla creada para practicar con React y sus hooks, conectada a una API pública.
+             <h2 className="text-lg font-bold mb-0">eCollectic</h2>  
+             <p>Plataforma de eCommerce sencilla con categorias, carrito y checkout, conectada a una API pública.</p>
             
             <ul className="flex flex-wrap gap-2 ">
               <li>
@@ -334,7 +339,8 @@ const Project = () => {
             </div>
             <article className="flex flex-col gap-y-6 text-gray-300
                                 md:text-xl">
-              Desarrollamos este proyecto con un cliente real, enfocado en la formación y desarrollo de habilidades para la búsqueda de empleo.
+                                  <h2 className="text-lg font-bold mb-0">Empleate</h2>
+             <p className="mb-0 text-md">Desarrollamos este proyecto con un cliente real, enfocado en la formación y desarrollo de habilidades para la búsqueda de empleo.</p> 
           
             <ul className="flex flex-wrap gap-2 ">
               <li>
