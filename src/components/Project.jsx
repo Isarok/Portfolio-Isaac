@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import Ecollectic from "../images/Ecollectic.png";
 import Apolliculture from "../images/Apolliculture.png";
-import EcoDers from "../images/EcoDers.png";
+import ToDo from "../images/ToDo.png";
 import Empleate from "../images/Empleate.png";
 import { FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
 import {
@@ -72,13 +72,13 @@ const Project = () => {
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <a
                 className="group-hover:bg-black/70 z-40 w-full h-full absolute transition-all duration-300 cursor-pointer"
-                href="https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/"
+                href="https://myyourtodolist.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               ></a>
               <img
-                src={EcoDers}
-                alt=" Imagen de proyecto EcoDers"
+                src={ToDo}
+                alt=" Imagen de proyecto ToDo"
                 className="group-hover:scale-125 transition-all duration-500 cursor-pointer"
               />
 
@@ -98,7 +98,8 @@ const Project = () => {
                                  lg:text-3xl 
                                  text-xl ">
                   <FaHtml5 className="text-red-500" />
-                  <FaCss3Alt className="text-blue-500" />   
+                  <FaCss3Alt className="text-blue-500" /> 
+                  <SiJavascript className="text-yellow-400" />  
                 </span >
                 
               </div>
@@ -106,13 +107,13 @@ const Project = () => {
 
             <article className="flex flex-col gap-y-6 text-gray-300
                                 md:text-xl"> 
-            ECO-DERS es la landing page de una consultoría tecnológica, desarrollada como uno de nuestros primeros proyectos en equipo.     
+            My ToDo List es una aplicación de tareas que permite agregar, editar, actualizar, eliminar y clasificar tareas.    
             <ul className="flex flex-wrap gap-2 ">
             <li>
               <span className="btn absolute w-full">
                 <span className="animate-background" />
                   <div className="btn-content">
-                    <a href="https://github.com/Isarok/Eco-Ders-2" 
+                    <a href="https://github.com/Isarok/ToDoList" 
                      target="_blank" 
                      rel="noopener noreferrer" 
                      className="btn-link">
@@ -128,7 +129,7 @@ const Project = () => {
                 <span className="animate-background" />
                   <div className="btn-content">
                     <a
-                     href="https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/"
+                     href="https://myyourtodolist.netlify.app/"
                      target="_blank"
                      rel="noopener noreferrer"
                      className="btn-link"
@@ -248,7 +249,7 @@ const Project = () => {
                                  lg:text-3xl 
                                  text-xl ">
                   <FaHtml5 className="text-red-400" />
-                  <FaCss3Alt className="text-blue-400" />
+                  <FaCss3Alt className="text-blue-500" />
                   <SiJavascript className="text-yellow-400" />
                   <FaReact className="text-cyan-400" />
                   <SiTailwindcss className="text-cyan-400"></SiTailwindcss>
