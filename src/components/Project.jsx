@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import Ecollectic from "../assets/images/Ecollectic.png";
 import Apolliculture from "../assets/images/Apolliculture.png";
-import EcoDers from "../assets/images/EcoDers.png";
+import ToDo from "../assets/images/ToDo.png";
 import Empleate from "../assets/images/Empleate.png";
 import { FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
 import {
@@ -72,13 +72,13 @@ const Project = () => {
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <a
                 className="group-hover:bg-black/70 z-40 w-full h-full absolute transition-all duration-300 cursor-pointer"
-                href="https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/"
+                href="https://myyourtodolist.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               ></a>
               <img
-                src={EcoDers}
-                alt=" Imagen de proyecto EcoDers"
+                src={ToDo}
+                alt=" Imagen de proyecto ToDo"
                 className="group-hover:scale-125 transition-all duration-500 cursor-pointer"
               />
 
@@ -98,50 +98,49 @@ const Project = () => {
                                  lg:text-3xl 
                                  text-xl ">
                   <FaHtml5 className="text-red-500" />
-                  <FaCss3Alt className="text-blue-500" />   
+                  <FaCss3Alt className="text-blue-500" /> 
+                  <SiJavascript className="text-yellow-400" />  
                 </span >
                 
               </div>
             </div>
 
-          <article className="flex flex-col gap-y-6 text-gray-300
-                              md:text-xl"> 
-            <h2 className="text-lg font-bold mb-0">ECO-DERS</h2>
-              <p className="mb-0">
-                Landing page de una consultoría tecnológica, desarrollada como uno de nuestros primeros proyectos en equipo.
-              </p>
-            
+            <article className="flex flex-col gap-y-6 text-gray-300
+                                md:text-xl"> 
+                                <h2 className="text-lg font-bold mb-0">My ToDo List ...</h2>
+            Aplicación de tareas que permite agregar, editar, actualizar, eliminar y clasificar tareas. Usa LocalStorage para guardar los datos.   
             <ul className="flex flex-wrap gap-2 ">
-              <li>
-                <span className="btn absolute w-full">
-                  <span className="animate-background" />
-                    <div className="btn-content">
-                      <a href="https://github.com/Isarok/Eco-Ders-2" 
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       className="btn-link">
-                        <FaGithub className="icon-general" />
-                         Código
-                      </a>
-                    </div>
+            <li>
+              <span className="btn absolute w-full">
+                <span className="animate-background" />
+                  <div className="btn-content">
+                    <a href="https://github.com/Isarok/ToDoList" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     className="btn-link">
+                      <FaGithub className="icon-general" />
+                      Código
+                    </a>
+                  </div>
                 </span>
-              </li>
-              <li>
-                <span className="relative btn">
-                  <span className="animate-background" />
-                    <div className="btn-content">
-                      <a
-                       href="https://6569c7d303571912c7181e30--preeminent-maamoul-9cf0cf.netlify.app/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       className="btn-link"
-                      >
-                        <GiWireframeGlobe className="icon-general" />
-                         Demo
-                      </a>
-                    </div>
-                  </span>
-              </li>
+              
+            </li>
+            <li>
+              <span className="relative btn">
+                <span className="animate-background" />
+                  <div className="btn-content">
+                    <a
+                     href="https://myyourtodolist.netlify.app/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="btn-link"
+                    >
+                    <GiWireframeGlobe className="icon-general" />
+                    Demo
+                  </a>
+                </div>
+              </span>
+            </li>
             </ul>
           </article>
 
@@ -252,7 +251,7 @@ const Project = () => {
                                  lg:text-3xl 
                                  text-xl ">
                   <FaHtml5 className="text-red-400" />
-                  <FaCss3Alt className="text-blue-400" />
+                  <FaCss3Alt className="text-blue-500" />
                   <SiJavascript className="text-yellow-400" />
                   <FaReact className="text-cyan-400" />
                   <SiTailwindcss className="text-cyan-400"></SiTailwindcss>
